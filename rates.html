@@ -49,7 +49,7 @@
 <body class="antialiased">
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 glass-nav">
+    <nav class="fixed top-0 w-full z-50 glass-nav relative">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-2 group">
                 <div class="bg-red-700 p-2 rounded-lg group-hover:bg-red-800 transition-colors">
@@ -66,9 +66,20 @@
                 <a href="trainers.html" class="hover:text-red-700 transition-colors">Trainers</a>
                 <a href="#contact" class="bg-stone-900 text-white px-5 py-2.5 rounded-full hover:bg-red-700 transition-all shadow-lg shadow-stone-200">Contact Us</a>
             </div>
-            <button class="lg:hidden text-stone-900">
+            <button class="lg:hidden text-stone-900" type="button" aria-expanded="false" aria-controls="mobile-menu" data-mobile-menu-button>
                 <i data-lucide="menu"></i>
             </button>
+        </div>
+        <div id="mobile-menu" class="absolute left-0 right-0 top-full hidden lg:hidden border-t border-stone-200 bg-white/95 backdrop-blur shadow-lg" data-mobile-menu>
+            <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 font-medium text-sm uppercase tracking-wider text-stone-600">
+                <a href="index.html" class="hover:text-red-700 transition-colors">Home</a>
+                <a href="facility.html" class="hover:text-red-700 transition-colors">Facility</a>
+                <a href="programs.html" class="hover:text-red-700 transition-colors">Programs</a>
+                <a href="rates.html" class="text-red-700">Rates</a>
+                <a href="startedDogsPups.html" class="hover:text-red-700 transition-colors">Pups/Dogs</a>
+                <a href="trainers.html" class="hover:text-red-700 transition-colors">Trainers</a>
+                <a href="#contact" class="inline-flex items-center justify-center bg-stone-900 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-all">Contact Us</a>
+            </div>
         </div>
     </nav>
 
@@ -388,6 +399,25 @@
     </footer>
 
     <script>
+        const menuButton = document.querySelector('[data-mobile-menu-button]');
+        const menu = document.querySelector('[data-mobile-menu]');
+
+        if (menuButton && menu) {
+            menuButton.addEventListener('click', () => {
+                const isHidden = menu.classList.toggle('hidden');
+                menuButton.setAttribute('aria-expanded', String(!isHidden));
+            });
+
+            menu.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    if (!menu.classList.contains('hidden')) {
+                        menu.classList.add('hidden');
+                        menuButton.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+        }
+
         lucide.createIcons();
     </script>
 </body>
