@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Meet the expert trainers at West Country Kennels. Over 20 years of experience in gun dog training and obedience.">
+    <title>Our Trainers | West Country Kennels</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fafaf9; /* stone-50 */
+            color: #1c1917;
+        }
+
+        .serif { font-family: 'Playfair Display', serif; }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .hero-pattern {
+            background-color: #f5f5f4;
+            background-image: radial-gradient(#e5e7eb 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+
+        @keyframes reveal {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-reveal { animation: reveal 0.8s ease-out forwards; }
+        
+        .trainer-card:hover .trainer-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="bg-red-700 p-2 rounded-lg group-hover:bg-red-800 transition-colors">
+                    <i data-lucide="dog" class="text-white w-6 h-6"></i>
+                </div>
+                <span class="font-bold text-xl tracking-tight uppercase">West Country <span class="text-red-700">Kennels</span></span>
+            </a>
+            <div class="hidden lg:flex items-center gap-8 font-medium text-sm uppercase tracking-wider text-stone-600">
+                <a href="index.html" class="hover:text-red-700 transition-colors">Home</a>
+                <a href="facility.html" class="hover:text-red-700 transition-colors">Facility</a>
+                <a href="programs.html" class="hover:text-red-700 transition-colors">Programs</a>
+                <a href="rates.html" class="hover:text-red-700 transition-colors">Rates</a>
+                <a href="startedDogsPups.html" class="hover:text-red-700 transition-colors">Pups/Dogs</a>
+                <a href="trainers.html" class="text-red-700">Trainers</a>
+                <a href="#contact" class="bg-stone-900 text-white px-5 py-2.5 rounded-full hover:bg-red-700 transition-all">Contact Us</a>
+            </div>
+            <button class="lg:hidden text-stone-900">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="relative pt-48 pb-32 overflow-hidden bg-stone-900">
+        <div class="max-w-7xl mx-auto px-6 text-center animate-reveal">
+            <span class="inline-block px-4 py-1.5 bg-red-100 text-red-700 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Expertise & Passion</span>
+            <h1 class="serif text-white lg:text-7xl mb-6">Meet Our <br><span class="italic text-red-800">Elite Training Staff.</span></h1>
+            <p class="text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed">
+                Our trainers don't just teach commands; they build partnerships. With decades of combined field and competition experience, we bring out the best in every dog.
+            </p>
+        </div>
+    </header>
+
+    <!-- Trainers Grid -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-3 gap-12">
+                
+                <!-- Trainer Card 1 -->
+                <article class="trainer-card group animate-reveal" style="animation-delay: 0.1s;">
+                    <div class="relative aspect-[4/5] rounded-3xl overflow-hidden mb-8 shadow-xl bg-stone-100">
+                        <img src="imgs/Trainer_Photo_Brian_Roushar.jpg" alt="John Smith" class="trainer-image w-full h-full object-cover transition-transform duration-700 ease-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent opacity-60"></div>
+                    </div>
+                    <div class="px-2">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="px-3 py-1 bg-red-700 text-white text-[10px] font-bold uppercase tracking-wider rounded-md">Head Trainer &#38; Owner Opperator</span>
+                            <span class="h-px flex-1 bg-stone-200"></span>
+                        </div>
+                        <h3 class="serif text-3xl mb-4 group-hover:text-red-700 transition-colors">Brian Roushar</h3>
+                        <p class="text-stone-600 leading-relaxed mb-8 text-sm">
+                            Brian Roushar has been training dogs since 1991, developing a lifelong passion for helping dogs thrive
+both at home and in the field. His approach blends practical experience with a deep understanding of
+canine behavior, and he sets the standard for the training methods used throughout the Kennel. Under
+his leadership, the entire training team follows the same philosophy of producing reliable, wellrounded
+dogs.
+                        </p>
+                        <div class="space-y-3">
+                            <h4 class="text-[10px] uppercase tracking-widest font-bold text-stone-400">Specialties</h4>
+                            <div class="flex flex-wrap gap-4">
+                                <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
+                                    <i data-lucide="person-standing" class="w-4 h-4 text-red-700"></i>
+                                    1-on-1 Training
+                                </div>
+                                <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
+                                    <i data-lucide="brain" class="w-4 h-4 text-red-700"></i>
+                                    Extensive Field/Water Experience
+                                </div><br>
+                                <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
+                                    <i data-lucide="check" class="w-4 h-4 text-red-700"></i>
+                                    Proven Training Methodology
+                                </div><br>
+                                <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
+                                    <i data-lucide="trophy" class="w-4 h-4 text-red-700"></i>
+                                    Hunt Test Prep
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Trainer Card 2 -->
+                <article class="trainer-card group animate-reveal" style="animation-delay: 0.2s;">
+                    <div class="relative aspect-[4/5] rounded-3xl overflow-hidden mb-8 shadow-xl bg-stone-100">
+                        <img src="imgs/Trainer_Photo_Shawn_Murray.JPEG" alt="Shawn Murray" class="trainer-image w-full h-full object-cover transition-transform duration-700 ease-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent opacity-60"></div>
+                    </div>
+                    <div class="px-2">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="px-3 py-1 bg-stone-900 text-white text-[10px] font-bold uppercase tracking-wider rounded-md">Trainer</span>
+                            <span class="h-px flex-1 bg-stone-200"></span>
+                        </div>
+                        <h3 class="serif text-3xl mb-4 group-hover:text-red-700 transition-colors">Shawn Murray</h3>
+                        <p class="text-stone-600 leading-relaxed mb-8 text-sm">
+                            Shawn Murray has been training since 2006, and specializes in obedience and the four-week intermediate hunting programs.
+                        </p>
+                        <div class="space-y-3">
+                            <h4 class="text-[10px] uppercase tracking-widest font-bold text-stone-400">Specialties</h4>
+                            <div class="flex flex-wrap gap-4">
+                                <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
+                                    <i data-lucide="shield-check" class="w-4 h-4 text-red-700"></i>
+                                    Obedience
+                                </div>
+                                <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
+                                    <i data-lucide="activity" class="w-4 h-4 text-red-700"></i>
+                                    4 Week Intermediate Hunting Program
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Trainer Card 3 -->
+                <article class="trainer-card group animate-reveal" style="animation-delay: 0.3s;">
+                    <div class="relative aspect-[4/5] rounded-3xl overflow-hidden mb-8 shadow-xl bg-stone-100">
+                        <img src="imgs/Trainer_Photo_Michael_Uecker.JPEG" alt="Michael Uecker" class="trainer-image w-full h-full object-cover transition-transform duration-700 ease-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent opacity-60"></div>
+                    </div>
+                    <div class="px-2">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="px-3 py-1 bg-stone-900 text-white text-[10px] font-bold uppercase tracking-wider rounded-md">Trainer</span>
+                            <span class="h-px flex-1 bg-stone-200"></span>
+                        </div>
+                        <h3 class="serif text-3xl mb-4 group-hover:text-red-700 transition-colors">Michael Uecker</h3>
+                        <p class="text-stone-600 leading-relaxed mb-8 text-sm">
+                            	Michael Uecker has been training since 2017, and specializes in puppy, four-week and six-week
+intermediate hunting programs, and obedience training.
+                        </p>
+                        <div class="space-y-3">
+                            <h4 class="text-[10px] uppercase tracking-widest font-bold text-stone-400">Specialties</h4>
+                            <div class="flex flex-wrap gap-4">
+                                <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
+                                    <i data-lucide="dog" class="w-4 h-4 text-red-700"></i>
+                                    Puppy
+                                </div>
+                                <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
+                                    <i data-lucide="activity" class="w-4 h-4 text-red-700"></i>
+                                    4/6 Week Intermediate Hunting Program
+                                </div>
+                                <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
+                                    <i data-lucide="shield-check" class="w-4 h-4 text-red-700"></i>
+                                    Obedience
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Trainer Card 4 -->
+                <article class="trainer-card group animate-reveal" style="animation-delay: 0.3s;">
+                    <div class="relative aspect-[4/5] rounded-3xl overflow-hidden mb-8 shadow-xl bg-stone-100">
+                        <img src="imgs/Trainer_Photo_Alainah_Bowles.JPEG" alt="Alainah Bowles" class="trainer-image w-full h-full object-cover transition-transform duration-700 ease-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent opacity-60"></div>
+                    </div>
+                    <div class="px-2">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="px-3 py-1 bg-stone-900 text-white text-[10px] font-bold uppercase tracking-wider rounded-md">Trainer</span>
+                            <span class="h-px flex-1 bg-stone-200"></span>
+                        </div>
+                        <h3 class="serif text-3xl mb-4 group-hover:text-red-700 transition-colors">Alainah Bowles</h3>
+                        <p class="text-stone-600 leading-relaxed mb-8 text-sm">
+                            	Alainah Bowles has been training since 2024, and specializes in obedience training.
+                        </p>
+                        <div class="space-y-3">
+                            <h4 class="text-[10px] uppercase tracking-widest font-bold text-stone-400">Specialties</h4>
+                            <div class="flex flex-wrap gap-4">
+                                <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
+                                    <i data-lucide="shield-check" class="w-4 h-4 text-red-700"></i>
+                                    Obedience
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-50 pt-20 pb-10 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="bg-red-700 p-2 rounded-lg">
+                            <i data-lucide="dog" class="text-white w-5 h-5"></i>
+                        </div>
+                        <span class="font-bold text-lg tracking-tight uppercase">West Country <span class="text-red-700">Kennels</span></span>
+                    </div>
+                    <p class="text-stone-500 max-w-sm mb-6">Established performance training located in Lester Prairie, Minnesota. Specializing in Labrador Retrievers and all-breed obedience.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-stone-400">Quick Links</h4>
+                    <ul class="space-y-3 text-stone-600 font-medium text-sm">
+                        <li><a href="index.html" class="hover:text-red-700 transition-colors">Home</a></li>
+                        <li><a href="facility.html" class="hover:text-red-700 transition-colors">The Facility</a></li>
+                        <li><a href="programs.html" class="hover:text-red-700 transition-colors">Training Programs</a></li>
+                        <li><a href="rates.html" class="hover:text-red-700 transition-colors">Rates & Pricing</a></li>
+                        <li><a href="startedDogsPups.html" class="hover:text-red-700 transition-colors">Pups/Started Dogs</a></li>
+                        <li><a href="trainers.html" class="text-red-700 transition-colors">Trainers</a></li>
+                    </ul>
+                </div>
+                <div id="contact">
+                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-stone-500">Lester Prairie, MN</h4>
+                    <p class="text-stone-600 text-sm font-medium leading-relaxed">
+                        2819 Brush Prairie Rd.<br>
+                        Lester Prairie, MN 55354<br><br>
+                        <span class="text-stone-600 font-medium">Phone Number:</span><br>
+                        <span class="text-red-500 font-bold">(320) 544-0732</span>
+                    </p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-stone-200 text-center text-[11px] text-stone-400 uppercase tracking-widest font-bold">
+                <p>© 2026 West Country Kennels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

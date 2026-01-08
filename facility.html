@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore the 60-acre elite training grounds of West Country Kennels in Lester Prairie, MN.">
+    <title>The Facility | West Country Kennels</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fafaf9;
+            color: #1c1917;
+        }
+
+        .serif { font-family: 'Playfair Display', serif; }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .parallax-section {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn { animation: fadeIn 0.8s ease-out forwards; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="bg-red-700 p-2 rounded-lg group-hover:bg-red-800 transition-colors">
+                    <i data-lucide="dog" class="text-white w-6 h-6"></i>
+                </div>
+                <span class="font-bold text-xl tracking-tight uppercase">West Country <span class="text-red-700">Kennels</span></span>
+            </a>
+            <div class="hidden lg:flex items-center gap-8 font-medium text-sm uppercase tracking-wider text-stone-600">
+                <a href="index.html" class="hover:text-red-700 transition-colors">Home</a>
+                <a href="facility.html" class="text-red-700 border-b-2 border-red-700 pb-1">Facility</a>
+                <a href="programs.html" class="hover:text-red-700 transition-colors">Programs</a>
+                <a href="rates.html" class="hover:text-red-700 transition-colors">Rates</a>
+                <a href="startedDogsPups.html" class="hover:text-red-700 transition-colors">Pups/Dogs</a>
+                <a href="trainers.html" class="hover:text-red-700 transition-colors">Trainers</a>
+                <a href="#contact" class="bg-stone-900 text-white px-5 py-2.5 rounded-full hover:bg-red-700 transition-all">Contact Us</a>
+            </div>
+            <button class="lg:hidden text-stone-900">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="relative pt-48 pb-32 overflow-hidden bg-stone-900">
+        <img src="https://images.unsplash.com/photo-1510942371900-5c66e2978351?q=80&w=2071&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40" alt="Minnesota Countryside">
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
+            <span class="inline-block px-4 py-1.5 bg-red-100 text-red-700 rounded-full text-xs font-bold uppercase tracking-widest mb-6 animate-fadeIn">Lester Prairie, MN</span>
+            <h1 class="serif text-5xl lg:text-7xl mb-6 animate-fadeIn" style="animation-delay: 0.1s;">The Training Grounds</h1>
+            <p class="text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed animate-fadeIn" style="animation-delay: 0.2s;">
+                Sixty acres of meticulously curated terrain designed to challenge, develop, and refine the instincts of elite sporting dogs.
+            </p>
+        </div>
+    </header>
+
+    <!-- Section 1: The Grounds -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="flex items-center gap-3 text-red-700 font-bold tracking-widest text-xs uppercase mb-4">
+                        <i data-lucide="waves" class="w-4 h-4"></i>
+                        <span>Technical Environments</span>
+                    </div>
+                    <h2 class="serif text-4xl lg:text-5xl mb-6">Varied Terrain & <br><span class="italic text-stone-500">Technical Water.</span></h2>
+                    <p class="text-stone-600 leading-relaxed mb-6 text-lg">
+                        West Country Kennels is situated on sixty private acres featuring heavy cover, upland fields, and manicured transition zones. Our "Technical Water" ponds are the centerpiece of the facility—engineered with specific points, channels, and islands to teach dogs to take lines through water and hold them under pressure.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 py-8 border-y border-stone-100 mb-8">
+                        <div>
+                            <h4 class="font-bold text-stone-900 mb-2">Diversified Land</h4>
+                            <p class="text-sm text-stone-500 leading-relaxed">Simulates real-world hunting scenarios across tall grasses and woodlots.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-stone-900 mb-2">Master Ponds</h4>
+                            <p class="text-sm text-stone-500 leading-relaxed">Purpose-built for handling drills and advanced blind retrieves.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1605001011156-cbf0b0f67a51?q=80&w=2000&auto=format&fit=crop" class="rounded-2xl shadow-2xl aspect-[4/3] object-cover" alt="Field Training">
+                        <div class="absolute -bottom-6 -left-6 bg-stone-900 text-white p-6 rounded-xl hidden md:block">
+                            <span class="block text-2xl font-bold italic serif">60 Acres</span>
+                            <span class="text-[10px] uppercase tracking-tighter opacity-70">Dedicated Training Space</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Indoor Kennels (Climate Controlled) -->
+    <section class="py-24 bg-stone-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1601758124277-f00d6d03d174?q=80&w=2000&auto=format&fit=crop" class="rounded-2xl shadow-2xl aspect-[4/3] object-cover" alt="Indoor Kennels">
+                    <div class="absolute top-6 right-6 flex flex-col gap-2">
+                        <div class="bg-white/90 backdrop-blur p-3 rounded-lg shadow-sm flex items-center gap-2">
+                            <i data-lucide="thermometer-snowflake" class="text-blue-500 w-5 h-5"></i>
+                            <span class="text-xs font-bold">Climate Balanced</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-3 text-red-700 font-bold tracking-widest text-xs uppercase mb-4">
+                        <i data-lucide="shield-check" class="w-4 h-4"></i>
+                        <span>The Home Environment</span>
+                    </div>
+                    <h2 class="serif text-4xl lg:text-5xl mb-6">Rest is as Crucial <br><span class="italic text-stone-500">As Training.</span></h2>
+                    <p class="text-stone-600 leading-relaxed mb-6 text-lg">
+                        After a day in the field, our residents retreat to a state-of-the-art indoor kennel facility. We maintain a climate-controlled environment (Heating & AC) to ensure every dog remains comfortable regardless of the Minnesota weather.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4">
+                            <div class="bg-white p-2 h-10 w-10 shrink-0 rounded-lg shadow-sm flex items-center justify-center">
+                                <i data-lucide="wind" class="text-red-700 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-stone-900">High-Flow Ventilation</h5>
+                                <p class="text-sm text-stone-500">Continuous fresh air exchange keeps the air clean and odor-free.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="bg-white p-2 h-10 w-10 shrink-0 rounded-lg shadow-sm flex items-center justify-center">
+                                <i data-lucide="sparkles" class="text-red-700 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-stone-900">Sanitized Daily</h5>
+                                <p class="text-sm text-stone-500">Rigorous medical-grade cleaning protocols to ensure optimal health.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Professional Supervision -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-stone-900 rounded-[3rem] p-12 lg:p-20 relative overflow-hidden">
+                <div class="relative z-10 grid lg:grid-cols-5 gap-12 items-center">
+                    <div class="lg:col-span-3 text-white">
+                        <h2 class="serif text-4xl lg:text-6xl mb-8 leading-tight">Around the Clock <br><span class="italic text-red-500">Professional Eyes.</span></h2>
+                        <p class="text-stone-400 text-lg leading-relaxed mb-10 max-w-xl">
+                            Our training staff lives on-site, providing 24/7 supervision. This constant presence allows us to monitor health, dietary intake, and social dynamics, ensuring your companion is safe, happy, and healthy.
+                        </p>
+                        <div class="flex flex-wrap gap-8">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-full bg-red-700/20 flex items-center justify-center border border-red-700/50">
+                                    <i data-lucide="eye" class="text-red-500 w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs uppercase tracking-widest text-stone-500 font-bold">Monitoring</p>
+                                    <p class="font-bold">24-Hour Watch</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-full bg-red-700/20 flex items-center justify-center border border-red-700/50">
+                                    <i data-lucide="activity" class="text-red-500 w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs uppercase tracking-widest text-stone-500 font-bold">Care</p>
+                                    <p class="font-bold">On-Site Staff</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2">
+                        <div class="aspect-square bg-stone-800 rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-3xl">
+                            <img src="https://images.unsplash.com/photo-1599443015574-be5fe8a05783?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover" alt="Staff Interaction">
+                        </div>
+                    </div>
+                </div>
+                <!-- Decorative element -->
+                <div class="absolute -right-20 -top-20 w-80 h-80 bg-red-700/10 blur-[100px] rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-24 border-t border-stone-100">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="serif text-3xl lg:text-5xl mb-8">Ready to see it in person?</h3>
+            <p class="text-stone-600 mb-10 text-lg">We welcome you to chose a program and/or talk to our Lead Trainer Brian!</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="programs.html" class="px-10 py-5 bg-red-700 text-white rounded-full font-bold uppercase tracking-widest text-xs hover:bg-red-800 transition-all shadow-xl shadow-red-900/20">Explore Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-50 pt-20 pb-10 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="bg-red-700 p-2 rounded-lg">
+                            <i data-lucide="dog" class="text-white w-5 h-5"></i>
+                        </div>
+                        <span class="font-bold text-lg tracking-tight uppercase">West Country <span class="text-red-700">Kennels</span></span>
+                    </div>
+                    <p class="text-stone-500 max-w-sm mb-6">Established performance training located in Lester Prairie, Minnesota. Specializing in Labrador Retrievers and all-breed obedience.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white border border-stone-200 flex items-center justify-center text-stone-400 hover:text-red-700 transition-colors">
+                            <i data-lucide="facebook" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white border border-stone-200 flex items-center justify-center text-stone-400 hover:text-red-700 transition-colors">
+                            <i data-lucide="instagram" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-stone-400">Quick Links</h4>
+                    <ul class="space-y-3 text-stone-600 font-medium text-sm">
+                        <li><a href="index.html" class="hover:text-red-700 transition-colors">Home</a></li>
+                        <li><a href="facility.html" class="text-red-700">The Facility</a></li>
+                        <li><a href="programs.html" class="hover:text-red-700 transition-colors">Training Programs</a></li>
+                        <li><a href="rates.html" class="hover:text-red-700 transition-colors">Rates & Pricing</a></li>
+                        <li><a href="startedDogsPups.html" class="hover:text-red-700 transition-colors">Pups/Started Dogs</a></li>
+                    </ul>
+                </div>
+                <div id="contact">
+                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-stone-500">Lester Prairie, MN</h4>
+                    <p class="text-stone-600 text-sm font-medium leading-relaxed">
+                        2819 Brush Prairie Rd.<br>
+                        Lester Prairie, MN 55354<br><br>
+                        <span class="text-stone-600 font-medium">Phone Number:</span><br>
+                        <span class="text-red-500 font-bold">(320) 544-0732</span>
+                    </p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-stone-200 text-center text-[11px] text-stone-400 uppercase tracking-widest font-bold">
+                <p>© 2026 West Country Kennels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

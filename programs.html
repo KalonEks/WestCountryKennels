@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore elite gun dog and obedience training programs at West Country Kennels. From puppies to advanced field performance.">
+    <title>Training Programs | West Country Kennels</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fafaf9;
+            color: #1c1917;
+        }
+
+        .serif { font-family: 'Playfair Display', serif; }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .hero-pattern {
+            background-color: #f5f5f4;
+            background-image: radial-gradient(#e5e7eb 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+
+        .program-card {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .program-card:hover {
+            transform: translateY(-8px);
+        }
+
+        @keyframes reveal {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-reveal { animation: reveal 0.8s ease-out forwards; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="bg-red-700 p-2 rounded-lg group-hover:bg-red-800 transition-colors">
+                    <i data-lucide="dog" class="text-white w-6 h-6"></i>
+                </div>
+                <span class="font-bold text-xl tracking-tight uppercase">West Country <span class="text-red-700">Kennels</span></span>
+            </a>
+            <div class="hidden lg:flex items-center gap-8 font-medium text-sm uppercase tracking-wider text-stone-600">
+                <a href="index.html" class="hover:text-red-700 transition-colors">Home</a>
+                <a href="facility.html" class="hover:text-red-700 transition-colors">Facility</a>
+                <a href="programs.html" class="text-red-700 transition-colors font-bold">Programs</a>
+                <a href="rates.html" class="hover:text-red-700 transition-colors">Rates</a>
+                <a href="startedDogsPups.html" class="hover:text-red-700 transition-colors">Pups/Dogs</a>
+                <a href="trainers.html" class="hover:text-red-700 transition-colors">Trainers</a>
+                <a href="#contact" class="bg-stone-900 text-white px-5 py-2.5 rounded-full hover:bg-red-700 transition-all">Contact Us</a>
+            </div>
+            <button class="lg:hidden text-stone-900">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="relative pt-48 pb-32 overflow-hidden bg-stone-900">
+        <div class="max-w-7xl mx-auto px-6 text-center animate-reveal">
+            <span class="inline-block px-4 py-1.5 bg-red-100 text-red-700 rounded-full text-xs font-bold uppercase tracking-widest mb-6">World-Class Training</span>
+            <h1 class="serif text-white lg:text-7xl mb-6">Proven Programs for <br><span class="italic text-red-800">Exceptional Results.</span></h1>
+            <p class="text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed">
+                Whether you're looking for a refined hunting partner, a competitive athlete, or a perfectly mannered family companion, our structured programs are built on trust, consistency, and decades of expertise.
+            </p>
+        </div>
+    </header>
+
+    <!-- Programs Grid -->
+    <section id="programs" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 1. PUPPY PROGRAM -->
+                <div class="program-card bg-stone-50 border border-stone-200 rounded-3xl overflow-hidden flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?auto=format&fit=crop&q=80&w=800" alt="Puppy training" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-red-700 shadow-sm">No Hunting Experience</div>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i data-lucide="sparkles" class="text-red-700 w-6 h-6"></i>
+                            <h3 class="text-2xl font-bold uppercase tracking-tight">Puppy Program</h3>
+                        </div>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            Our puppy program introduces dogs to birds (such as pigeons, chukkars pheasants and ducks), firearms and water. Dogs as young as 5 months or dogs with no hunting experience are encouraged to start at this level. This program provides the building blocks in becoming a good hunting dog.
+                        </p>
+                        <p class="font-bold text-stone-600">This program will guide your dog through: </p><br>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Introduction To Firearms</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Live Bird Introduction</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Flushing (Land &#38; Water)</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Retrieving (Land &#38; Water)</li>
+                        </ul>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <a href="rates.html" class="block w-full text-center py-4 bg-white border-2 border-stone-900 rounded-xl font-bold text-sm hover:bg-stone-900 hover:text-white transition-all">View Rates</a>
+                    </div>
+                </div>
+
+                <!-- 2. INTERMEDIATE PROGRAM -->
+                <div class="program-card bg-stone-50 border border-stone-200 rounded-3xl overflow-hidden flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?auto=format&fit=crop&q=80&w=800" alt="Puppy training" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-red-700 shadow-sm">8 Months or Older</div>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i data-lucide="paw-print" class="text-red-700 w-6 h-6"></i>
+                            <h3 class="text-2xl font-bold uppercase tracking-tight">INTERMEDIATE PROGRAM</h3>
+                        </div>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            The critical foundation for any future Pointer or Retriever. We focus on shaping the mind to build confidence and trust with your dog in the field.
+                        </p>
+                        <p class="font-bold text-stone-600">This program will guide your dog through: </p><br>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> On-Off Leash Obedience</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Retrieve To Hand (Force Fetching)</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Water Skills (Boats, Blinds, Decoys)</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Steady To Shot</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Pointing skills</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Field skills (Flushing, Tracking, Quartering, Flyaways)</li>
+                        </ul>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <a href="rates.html" class="block w-full text-center py-4 bg-white border-2 border-stone-900 rounded-xl font-bold text-sm hover:bg-stone-900 hover:text-white transition-all">View Rates</a>
+                    </div>
+                </div>
+
+                <!-- 3. ADVANCED PROGRAM -->
+                <div class="program-card bg-stone-50 border border-stone-200 rounded-3xl overflow-hidden flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?auto=format&fit=crop&q=80&w=800" alt="Advanced retriever" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-red-700 shadow-sm">Intermediate &#65291;</div>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i data-lucide="award" class="text-red-700 w-6 h-6"></i>
+                            <h3 class="text-2xl font-bold uppercase tracking-tight">ADVANCED PROGRAM</h3>
+                        </div>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            For the serious waterfowler or hunt test competitor. Handling your dog with surgical precision at long distances This program is meant only for dogs who have gone through the intermediate program.
+                        </p>
+                        <p class="font-bold text-stone-600">This program will guide your dog through: </p><br>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Hand Signals</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Land And Water</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Steady To Shot</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Steady To Flush</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Advanced Obedience</li>
+                        </ul>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <a href="rates.html" class="block w-full text-center py-4 bg-white border-2 border-stone-900 rounded-xl font-bold text-sm hover:bg-stone-900 hover:text-white transition-all">View Rates</a>
+                    </div>
+                </div>
+
+                <!-- 4. OBEDIENCE TRAINING -->
+                <div class="program-card bg-stone-50 border border-stone-200 rounded-3xl overflow-hidden flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?auto=format&fit=crop&q=80&w=800" alt="Upland hunting dog" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-red-700 shadow-sm">Obedience</div>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i data-lucide="shield-check" class="text-red-700 w-6 h-6"></i>
+                            <h3 class="text-2xl font-bold uppercase tracking-tight">OBEDIENCE PROGRAM</h3>
+                        </div>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            We train all breeds of obedience for reliable responses you can trust. Perfect for family companions or competitive obedience dogs.
+                        </p>
+                        <p class="font-bold text-stone-600">This program will guide your dog through: </p><br>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Sit</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Heel</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Down</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Come</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Stay</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Kennel Up</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Off</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Any Other Commands You Request</li>
+                        </ul>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <a href="rates.html" class="block w-full text-center py-4 bg-white border-2 border-stone-900 rounded-xl font-bold text-sm hover:bg-stone-900 hover:text-white transition-all">View Rates</a>
+                    </div>
+                </div>
+
+                <!-- 5. BOARDING -->
+                <div class="program-card bg-stone-50 border border-stone-200 rounded-3xl overflow-hidden flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?auto=format&fit=crop&q=80&w=800" alt="Dog obedience" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-red-700 shadow-sm">All Breeds</div>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i data-lucide="house" class="text-red-700 w-6 h-6"></i>
+                            <h3 class="text-2xl font-bold uppercase tracking-tight">Boarding</h3>
+                        </div>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            West Country Kennels offers short-term and long-term boarding. Board and train programs, typically three to ten days, are designed specifically for the level of your dog’s obedience or hunting abilities.
+                        </p>
+                        <p class="font-bold text-stone-600">All Dogs Recieve: </p><br>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> 3 Exercise Sessions Daily</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> High Quality Food</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> A Bath Upon Departure</li>
+                        </ul>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <a href="rates.html" class="block w-full text-center py-4 bg-white border-2 border-stone-900 rounded-xl font-bold text-sm hover:bg-stone-900 hover:text-white transition-all">View Rates</a>
+                    </div>
+                </div>
+
+                <!-- 6. PRIVATE LESSONS -->
+                <div class="program-card bg-stone-50 border border-stone-200 rounded-3xl overflow-hidden flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?auto=format&fit=crop&q=80&w=800" alt="Gun dog refresher" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-red-700 shadow-sm">Any Skill Level</div>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i data-lucide="rotate-ccw" class="text-red-700 w-6 h-6"></i>
+                            <h3 class="text-2xl font-bold uppercase tracking-tight">Private Lessons</h3>
+                        </div>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            Brian offers one on one training for you and your dog on an hourly basis. Private lessons are for all breeds regardless of any previous training they may have had.
+                        </p>
+                        <p class="font-bold text-stone-600">This Program Includes: </p><br>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> 1-on-1 Training For You &#38; Your Dog </li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Personalized Experience</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Training From Any Level</li>
+                        </ul>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <a href="rates.html" class="block w-full text-center py-4 bg-white border-2 border-stone-900 rounded-xl font-bold text-sm hover:bg-stone-900 hover:text-white transition-all">View Rates</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-50 pt-20 pb-10 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="bg-red-700 p-2 rounded-lg">
+                            <i data-lucide="dog" class="text-white w-5 h-5"></i>
+                        </div>
+                        <span class="font-bold text-lg tracking-tight uppercase">West Country <span class="text-red-700">Kennels</span></span>
+                    </div>
+                    <p class="text-stone-500 max-w-sm mb-6">Established performance training located in Lester Prairie, Minnesota. Specializing in Labrador Retrievers and all-breed obedience.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-stone-400">Quick Links</h4>
+                    <ul class="space-y-3 text-stone-600 font-medium text-sm">
+                        <li><a href="index.html" class="hover:text-red-700 transition-colors">Home</a></li>
+                        <li><a href="facility.html" class="hover:text-red-700 transition-colors">The Facility</a></li>
+                        <li><a href="programs.html" class="hover:text-red-700 transition-colors">Training Programs</a></li>
+                        <li><a href="rates.html" class="hover:text-red-700 transition-colors">Rates & Pricing</a></li>
+                        <li><a href="startedDogsPups.html" class="hover:text-red-700 transition-colors">Pups/Started Dogs</a></li>
+                        <li><a href="trainers.html" class="hover:text-red-700 transition-colors">Trainers</a></li>
+                    </ul>
+                </div>
+                <div id="contact">
+                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-stone-500">Lester Prairie, MN</h4>
+                    <p class="text-stone-600 text-sm font-medium leading-relaxed">
+                        2819 Brush Prairie Rd.<br>
+                        Lester Prairie, MN 55354<br><br>
+                        <span class="text-stone-600 font-medium">Phone Number:</span><br>
+                        <span class="text-red-500 font-bold">(320) 544-0732</span>
+                    </p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-stone-200 flex flex-col md:flex-row justify-between items-center gap-4 text-[11px] text-stone-400 uppercase tracking-widest font-bold">
+                <p>&copy; 2026 West Country Kennels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
