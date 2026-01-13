@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="West Country Kennels - Elite Gun Dog Training and Labrador Retrievers in Lester Prairie, MN.">
-    <title>West Country Kennels</title>
+    <meta name="description" content="West Country Kennels Gallery - a collection of photos from our training grounds and staff.">
+    <title>Gallery | West Country Kennels</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
-        
+
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: #fafaf9;
@@ -46,11 +46,11 @@
                 <span class="font-bold text-xl tracking-tight uppercase">West Country <span class="text-red-700">Kennels</span></span>
             </a>
             <div class="hidden lg:flex items-center gap-8 font-medium text-sm uppercase tracking-wider text-stone-600">
-                <a href="index.html" class="text-red-700">Home</a>
+                <a href="index.html" class="hover:text-red-700 transition-colors">Home</a>
                 <a href="facility.html" class="hover:text-red-700 transition-colors">Facility</a>
                 <a href="programs.html" class="hover:text-red-700 transition-colors">Programs</a>
                 <a href="rates.html" class="hover:text-red-700 transition-colors">Rates</a>
-                <a href="gallery.html" class="hover:text-red-700 transition-colors">Gallery</a>
+                <a href="gallery.html" class="text-red-700 border-b-2 border-red-700 pb-1">Gallery</a>
                 <a href="trainers.html" class="hover:text-red-700 transition-colors">Staff</a>
                 <a href="#contact" class="bg-stone-900 text-white px-5 py-2.5 rounded-full hover:bg-red-700 transition-all">Contact Us</a>
             </div>
@@ -60,11 +60,11 @@
         </div>
         <div id="mobile-menu" class="absolute left-0 right-0 top-full hidden lg:hidden border-t border-stone-200 bg-white/95 backdrop-blur shadow-lg" data-mobile-menu>
             <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 font-medium text-sm uppercase tracking-wider text-stone-600">
-                <a href="index.html" class="text-red-700">Home</a>
+                <a href="index.html" class="hover:text-red-700 transition-colors">Home</a>
                 <a href="facility.html" class="hover:text-red-700 transition-colors">Facility</a>
                 <a href="programs.html" class="hover:text-red-700 transition-colors">Programs</a>
                 <a href="rates.html" class="hover:text-red-700 transition-colors">Rates</a>
-                <a href="gallery.html" class="hover:text-red-700 transition-colors">Gallery</a>
+                <a href="gallery.html" class="text-red-700">Gallery</a>
                 <a href="trainers.html" class="hover:text-red-700 transition-colors">Staff</a>
                 <a href="#contact" class="inline-flex items-center justify-center bg-stone-900 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-all">Contact Us</a>
             </div>
@@ -78,70 +78,40 @@
         </div>
     </section>
 
-    <!-- Hero Section -->
-    <header class="relative pt-20 pb-1 overflow-hidden bg-stone-900">
-        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center text-white animate-reveal">
-            <h1 class="serif text-5xl lg:text-8xl mb-6">Elite Training for <br><span class="italic text-red-700">The Modern Hunter.</span></h1>
-            <p class="text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed mb-10">
-                Dedicated to developing your family companion through solid obedience training and when desired, shaping a skilled hunting partner, supported by trusted boarding and proven gun dog programs for all breeds.            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="programs.html" class="px-8 py-4 bg-red-700 text-white rounded-full font-bold uppercase tracking-widest text-xs hover:bg-red-800 transition-all">View Programs</a>
-                <a href="facility.html" class="px-8 py-4 bg-white border border-stone-200 text-stone-900 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-stone-50 transition-all">Tour Facility</a>
-            </div>
+    <!-- Header Section -->
+    <header class="relative pt-12 pb-12 overflow-hidden bg-stone-900">
+        <div class="max-w-7xl mx-auto px-6 text-center text-white animate-reveal">
+            <h1 class="serif text-4xl sm:text-5xl lg:text-7xl">Gallery</h1>
         </div>
     </header>
 
-    <!-- Stats/Trust Section -->
-    <section class="py-8 bg-stone-900 text-white">
+    <!-- Gallery Grid -->
+    <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-2 md:grid-cols-2 text-center">
-                <div>
-                    <div class="text-3xl font-bold mb-1">25+</div>
-                    <div class="text-[10px] uppercase tracking-widest text-stone-400 font-bold">Years Experience</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
+                    <img src="imgs/Mazey.jpg" alt="Labrador retriever at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
-                <div>
-                    <div class="text-3xl font-bold mb-1">50+</div>
-                    <div class="text-[10px] uppercase tracking-widest text-stone-400 font-bold">Private Acres</div>
+                <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
+                    <img src="imgs/Trainer_photo_Brian_Roushar_2.jpg" alt="Training photo at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
-        </div>
-    </section>
-
-    <!-- Feature Section (Facility) -->
-    <section id="facility" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="relative">
-                    <div class="aspect-[4/5] bg-stone-100 rounded-3xl overflow-hidden shadow-2xl">
-                        <img src="imgs/Mazey.jpg" alt="Training facility" class="w-full h-full object-cover">
-                    </div>
-                    <div class="absolute -bottom-6 -right-6 bg-red-700 p-6 sm:p-8 rounded-3xl text-white block">
-                        <i data-lucide="map-pin" class="w-8 h-8 mb-4"></i>
-                        <h4 class="font-bold text-xl mb-1">Lester Prairie, MN</h4>
-                        <p class="text-sm opacity-80">Premier Training Grounds</p>
-                    </div>
+                <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
+                    <img src="imgs/Trainer_Photo_Shawn_Murray1.png" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
-                <div>
-                    <h2 class="serif text-4xl lg:text-5xl mb-8">The Ultimate <br><span class="italic">Training Environment.</span></h2>
-                    <p class="text-stone-600 leading-relaxed mb-8">
-                        Our facility spans 60 acres of diverse terrain, including manicured fields, woodlots, and technical water ponds designed specifically for retriever development. We provide a safe, climate-controlled environment where your dog can focus on reaching their full potential.
-                    </p>
-                    <ul class="space-y-4 mb-10">
-                        <li class="flex items-center gap-3 font-medium">
-                            <i data-lucide="check-circle-2" class="text-red-700 w-5 h-5"></i>
-                            Advanced Technical Ponds
-                        </li>
-                        <li class="flex items-center gap-3 font-medium">
-                            <i data-lucide="check-circle-2" class="text-red-700 w-5 h-5"></i>
-                            Climate Controlled Indoor Kennels
-                        </li>
-                        <li class="flex items-center gap-3 font-medium">
-                            <i data-lucide="check-circle-2" class="text-red-700 w-5 h-5"></i>
-                            24/7 Professional Supervision
-                        </li>
-                    </ul>
-                    <a href="facility.html" class="inline-flex items-center gap-2 font-bold text-sm uppercase tracking-widest text-red-700 hover:gap-4 transition-all">
-                        Learn More About Our Facility <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </a>
+                <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
+                    <img src="imgs/Trainer_Photo_Michael_Uecker.JPEG" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
+                    <img src="imgs/Trainer_Photo_Alainah_Bowles.JPEG" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
+                    <img src="imgs/Trainer_Photo_Brian_Roushar.jpg" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
+                    <img src="imgs/Trainer_Photo_Shawn_Murray.JPEG" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
+                    <img src="imgs/gallery_1.jpg" alt="West Country Kennels staff placeholder" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
             </div>
         </div>
@@ -154,7 +124,6 @@
                 <div class="col-span-1 lg:col-span-2">
                     <div class="flex items-center gap-2 mb-6">
                         <img src="imgs/Logo.png" alt="West Country Kennels logo" class="w-50 h-40 object-contain">
-                        
                     </div>
                     <p class="text-stone-500 max-w-sm mb-6">Established performance training located in Lester Prairie, Minnesota. Specializing in Labrador Retrievers and all-breed obedience.</p>
                 </div>
@@ -165,7 +134,7 @@
                         <li><a href="facility.html" class="hover:text-red-700 transition-colors">The Facility</a></li>
                         <li><a href="programs.html" class="hover:text-red-700 transition-colors">Training Programs</a></li>
                         <li><a href="rates.html" class="hover:text-red-700 transition-colors">Rates & Pricing</a></li>
-                        <li><a href="gallery.html" class="hover:text-red-700 transition-colors">Gallery</a></li>
+                        <li><a href="gallery.html" class="text-red-700">Gallery</a></li>
                         <li><a href="trainers.html" class="hover:text-red-700 transition-colors">Staff</a></li>
                     </ul>
                 </div>
@@ -180,7 +149,7 @@
                 </div>
             </div>
             <div class="pt-8 border-t border-stone-200 text-center text-[11px] text-stone-400 uppercase tracking-widest font-bold">
-                <p>© 2026 West Country Kennels. All rights reserved.</p>
+                <p>Ac 2026 West Country Kennels. All rights reserved.</p>
             </div>
         </div>
     </footer>
