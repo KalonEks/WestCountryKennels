@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Boarding at West Country Kennels in Lester Prairie, MN.">
+    <title>Boarding | West Country Kennels</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fafaf9;
+            color: #1c1917;
+        }
+
+        .serif { font-family: 'Playfair Display', serif; }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .hero-pattern {
+            background-color: #f5f5f4;
+            background-image: radial-gradient(#e5e7eb 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+
+        .program-card {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .program-card:hover {
+            transform: translateY(-8px);
+        }
+
+        @keyframes reveal {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-reveal { animation: reveal 0.8s ease-out forwards; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav relative">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <span class="font-bold text-xl tracking-tight uppercase">West Country <span class="text-red-700">Kennels</span></span>
+            </a>
+            <div class="hidden lg:flex items-center gap-8 font-medium text-sm uppercase tracking-wider text-stone-600">
+                <a href="index.html" class="hover:text-red-700 transition-colors">Home</a>
+                <a href="facility.html" class="hover:text-red-700 transition-colors">Facility</a>
+                <a href="boarding.html" class="text-red-700 border-b-2 border-red-700 pb-1">Boarding</a>
+                <a href="training.html" class="hover:text-red-700 transition-colors">Training</a>
+                <a href="staff.html" class="hover:text-red-700 transition-colors">Staff</a>
+                <a href="gallery.html" class="hover:text-red-700 transition-colors">Gallery</a>
+                            <a href="reservation.html" class="bg-stone-900 text-white px-5 py-2.5 rounded-full hover:bg-red-700 transition-all">Request Reservation</a>
+            </div>
+            <button class="lg:hidden text-stone-900" type="button" aria-expanded="false" aria-controls="mobile-menu" data-mobile-menu-button>
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="absolute left-0 right-0 top-full hidden lg:hidden border-t border-stone-200 bg-white/95 backdrop-blur shadow-lg" data-mobile-menu>
+            <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 font-medium text-sm uppercase tracking-wider text-stone-600">
+                <a href="index.html" class="hover:text-red-700 transition-colors">Home</a>
+                <a href="facility.html" class="hover:text-red-700 transition-colors">Facility</a>
+                <a href="boarding.html" class="text-red-700">Boarding</a>
+                <a href="training.html" class="hover:text-red-700 transition-colors">Training</a>
+                <a href="staff.html" class="hover:text-red-700 transition-colors">Staff</a>
+                <a href="gallery.html" class="hover:text-red-700 transition-colors">Gallery</a>
+                            <a href="reservation.html" class="inline-flex items-center justify-center bg-stone-900 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-all">Request Reservation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Logo Banner -->
+    <section class="bg-white">
+        <div class="w-full px-0">
+            <img src="imgs/Logo2.png" alt="West Country Kennels logo" class="w-full h-auto block object-contain mx-auto">
+        </div>
+    </section>
+
+    <!-- Header Section -->
+    <header class="relative pt-20 pb-20 overflow-hidden bg-stone-900">
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center text-white animate-reveal">
+            <span class="inline-block px-4 py-1.5 bg-red-100 text-red-700 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Comfortable Stays</span>
+            <h1 class="serif text-white text-4xl sm:text-5xl lg:text-7xl mb-6">Boarding That Feels Like <br><span class="italic text-red-700">Home.</span></h1>
+            <p class="text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed">
+                West Country Kennels is a home away from home for any and all dogs. Whether you're looking for short-term or long-term boarding, our facility provides a safe, comfortable, and engaging environment where your dog will feel just as loved as you love them!
+            </p>
+        </div>
+    </header>
+
+    <!-- Vaccinations & Deposits -->
+    <section class="pt-8 pb-8 bg-red-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-5xl">
+                <p class="text-sm md:text-base leading-relaxed pb-4 text-stone-600">
+                    <span class="font-bold text-stone-900">VACCINATIONS:</span> For any dog staying at our facility, we require Rabies, DHP-P, and Bordetella vaccines to be current. Please upload your current vaccines into our mobile app <a href="https://pawpartner.com" target="_blank" rel="noopener noreferrer" class="font-bold text-red-700 hover:text-red-800">Paw Partner</a>, and confirm that they are current before your dog arrives at our facility.
+                </p>
+                <p class="text-sm md:text-base leading-relaxed text-stone-600">
+                    <span class="font-bold text-stone-900">BOARDING DEPOSITS:</span> A 2-day deposit is required for holiday and peak-event reservations (New Year's, March, Memorial Day, July 4th, Labor Day, Thanksgiving, and Christmas). A 1-day deposit is required for reservations from May through August. Holiday deposits are refundable with 14+ days' notice; May-August deposits are refundable with 7+ days' notice. Deposits are forfeited if canceled within the respective windows.
+                </p>
+                <div class="mt-4 md:text-base flex items-center gap-3 text-stone-600 text-sm font-medium">
+                    <span class="font-bold">Join us on Paw Partner:</span>
+                    <a href="https://pawpartner.com/pz/book?p=3547719" target="_blank" rel="noopener noreferrer" class="inline-flex items-center group" aria-label="Join West Country Kennels on Paw Partner">
+                        <img src="imgs/paw_partner.png" alt="Paw Partner booking" class="h-10 w-auto rounded-md shadow-sm ring-1 ring-stone-200 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:shadow-md">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Boarding Options -->
+    <section id="boarding" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="program-card bg-stone-50 border border-stone-200 rounded-3xl overflow-hidden flex flex-col">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800" alt="Boarding kennels" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-red-700 shadow-sm">Short or Long-Term</div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i data-lucide="house" class="text-red-700 w-6 h-6"></i>
+                            <h3 class="text-2xl font-bold uppercase tracking-tight">Boarding</h3>
+                        </div>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            West Country Kennels offers short-term and long-term boarding, giving your dog a comfortable stay with daily care, exercise, and attentive oversight from our staff.
+                        </p>
+                        <div class="mb-6 flex items-baseline gap-2">
+                            <span class="text-3xl font-bold tracking-tight">$40</span>
+                            <span class="text-stone-500 text-sm font-medium">/ day</span>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> 3 Exercise Sessions Daily</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> High Quality NutriSource Food</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> A Bath Upon Departure (four day minimum)</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Large Individual Kennels</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Outdoor Exercise Areas</li>
+                        </ul>
+                        <div class="mt-auto pt-6">
+                            <a href="https://pawpartner.com/pz/book?p=3547719" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-center justify-center px-8 py-3 bg-stone-900 text-white rounded-full font-bold uppercase tracking-widest text-xs hover:bg-red-700 transition-all">Book</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card bg-stone-50 border border-stone-200 rounded-3xl overflow-hidden flex flex-col">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&q=80&w=800" alt="Board and train" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-red-700 shadow-sm">Board &amp; Train</div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i data-lucide="house-plus" class="text-red-700 w-6 h-6"></i>
+                            <h3 class="text-2xl font-bold uppercase tracking-tight">Board and Train</h3>
+                        </div>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            Our Board and Train option provides added time with a trainer to reinforce past training or give your dog extra fun, structured one-on-one time with a staff member during their boarding stay. These brush-up or engagement sessions can be added for the full stay, part of the visit, or even just a single day. Dogs with prior training will receive obedience work, with field work including birds will be incorporated when their previous experience makes it appropriate.
+                        </p>
+                        <div class="mb-6 flex items-baseline gap-2">
+                            <span class="text-3xl font-bold tracking-tight">$85</span>
+                            <span class="text-stone-500 text-sm font-medium">/ day</span>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> One-On-One Sessions</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Training or Engagement Options</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Brush Intermediate Skills When Applicable</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Full-Stay or Single-Day Add-Ons</li>
+                            <li class="flex items-center gap-3 text-sm text-stone-700"><i data-lucide="check" class="w-4 h-4 text-red-700"></i> Customized Training Requests Also Available</li>
+                        </ul>
+                        <div class="mt-auto pt-6">
+                            <a href="https://pawpartner.com/pz/book?p=3547719" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-center justify-center px-8 py-3 bg-stone-900 text-white rounded-full font-bold uppercase tracking-widest text-xs hover:bg-red-700 transition-all">Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-stone-50 pt-20 pb-10 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <img src="imgs/Logo.png" alt="West Country Kennels logo" class="w-50 h-40 object-contain">
+                    </div>
+                    <p class="text-stone-500 max-w-sm mb-6 font-bold">Trusted Training and Care since 2000</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-stone-400">Quick Links</h4>
+                    <ul class="space-y-3 text-stone-600 font-medium text-sm">
+                        <li><a href="index.html" class="hover:text-red-700 transition-colors">Home</a></li>
+                        <li><a href="facility.html" class="hover:text-red-700 transition-colors">The Facility</a></li>
+                        <li><a href="boarding.html" class="hover:text-red-700 transition-colors">Boarding</a></li>
+                        <li><a href="reservation.html" class="hover:text-red-700 transition-colors">Reservation</a></li>
+                        <li><a href="training.html" class="hover:text-red-700 transition-colors">Training</a></li>
+                        <li><a href="staff.html" class="hover:text-red-700 transition-colors">Staff</a></li>
+                        <li><a href="gallery.html" class="hover:text-red-700 transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+                <div id="contact">
+                    <a href="https://www.google.com/maps?q=2819+Brush+Prairie+Rd,+Lester+Prairie,+MN+55354" target="_blank" rel="noopener noreferrer" aria-label="Open West Country Kennels address in Google Maps" class="block group">
+                        <h4 class="font-bold mb-2 text-sm uppercase tracking-widest text-stone-500 group-hover:text-red-700 transition-colors">Lester Prairie, MN</h4>
+                        <p class="text-stone-600 text-sm font-medium leading-relaxed group-hover:text-red-700 transition-colors">
+                            2819 Brush Prairie Rd.<br>
+                            Lester Prairie, MN 55354
+                        </p>
+                    </a>
+                    <p class="text-stone-600 text-sm font-medium leading-relaxed mt-4">
+                        <span class="text-stone-600 font-medium">Phone Number:</span><br>
+                        <span class="text-red-500 font-bold">(320) 544-0732</span>
+                    </p>
+                    <a href="https://pawpartner.com/pz/book?p=3547719" target="_blank" rel="noopener noreferrer" class="inline-flex items-center mt-4 group" aria-label="Book boarding and kenneling with Paw Partner">
+                        <img src="imgs/paw_partner.png" alt="Paw Partner booking" class="h-10 w-auto rounded-md shadow-sm ring-1 ring-stone-200 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:shadow-md">
+                    </a>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-stone-200 flex flex-col md:flex-row justify-between items-center gap-4 text-[11px] text-stone-400 uppercase tracking-widest font-bold">
+                <p>&copy; 2026 West Country Kennels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.querySelector('[data-mobile-menu-button]');
+        const menu = document.querySelector('[data-mobile-menu]');
+
+        if (menuButton && menu) {
+            menuButton.addEventListener('click', () => {
+                const isHidden = menu.classList.toggle('hidden');
+                menuButton.setAttribute('aria-expanded', String(!isHidden));
+            });
+
+            menu.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    if (!menu.classList.contains('hidden')) {
+                        menu.classList.add('hidden');
+                        menuButton.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+        }
+
+        lucide.createIcons();
+    </script>
+</body>
+</html>
