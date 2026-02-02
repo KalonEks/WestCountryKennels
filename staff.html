@@ -39,6 +39,12 @@
         .staff-card:hover .staff-image {
             transform: scale(1.05);
         }
+    
+        .shadow-accent {
+            --tw-shadow-color: rgba(184, 134, 11, 0.2);
+            --tw-shadow: var(--tw-shadow-colored);
+        }
+
     </style>
 </head>
 <body class="antialiased">
@@ -47,16 +53,16 @@
     <nav class="fixed top-0 w-full z-50 glass-nav relative">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-2 group">
-                <span class="font-bold text-xl tracking-tight uppercase">West Country <span class="text-red-700">Kennels</span></span>
+                <span class="font-bold text-xl tracking-tight uppercase">West Country <span class="text-[goldenrod]">Kennels</span></span>
              </a>
             <div class="hidden lg:flex items-center gap-8 font-medium text-sm uppercase tracking-wider text-stone-600">
-                <a href="index.html" class="hover:text-red-700 transition-colors">Home</a>
-                <a href="facility.html" class="hover:text-red-700 transition-colors">Facility</a>
-                <a href="boarding.html" class="hover:text-red-700 transition-colors">Boarding</a>
-                <a href="training.html" class="hover:text-red-700 transition-colors">Training</a>
-                <a href="staff.html" class="text-red-800">Staff</a>
-                <a href="gallery.html" class="hover:text-red-700 transition-colors">Gallery</a>
-                            <a href="reservation.html" class="bg-stone-900 text-white px-5 py-2.5 rounded-full hover:bg-red-700 transition-all">Request Reservation</a>
+                <a href="index.html" class="hover:text-[goldenrod] transition-colors">Home</a>
+                <a href="facility.html" class="hover:text-[goldenrod] transition-colors">Facility</a>
+                <a href="boarding.html" class="hover:text-[goldenrod] transition-colors">Boarding</a>
+                <a href="training.html" class="hover:text-[goldenrod] transition-colors">Training</a>
+                <a href="staff.html" class="text-[#b8860b]">Staff</a>
+                <a href="gallery.html" class="hover:text-[goldenrod] transition-colors">Gallery</a>
+                            <a href="reservation.html" class="bg-stone-900 text-white px-5 py-2.5 rounded-full hover:bg-[goldenrod] transition-all">Request Reservation</a>
             </div>
             <button class="lg:hidden text-stone-900" type="button" aria-expanded="false" aria-controls="mobile-menu" data-mobile-menu-button>
                 <i data-lucide="menu"></i>
@@ -64,13 +70,13 @@
         </div>
         <div id="mobile-menu" class="absolute left-0 right-0 top-full hidden lg:hidden border-t border-stone-200 bg-white/95 backdrop-blur shadow-lg" data-mobile-menu>
             <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 font-medium text-sm uppercase tracking-wider text-stone-600">
-                <a href="index.html" class="hover:text-red-700 transition-colors">Home</a>
-                <a href="facility.html" class="hover:text-red-700 transition-colors">Facility</a>
-                <a href="boarding.html" class="hover:text-red-700 transition-colors">Boarding</a>
-                <a href="training.html" class="hover:text-red-700 transition-colors">Training</a>
-                <a href="staff.html" class="text-red-700">Staff</a>
-                <a href="gallery.html" class="hover:text-red-700 transition-colors">Gallery</a>
-                            <a href="reservation.html" class="inline-flex items-center justify-center bg-stone-900 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-all">Request Reservation</a>
+                <a href="index.html" class="hover:text-[goldenrod] transition-colors">Home</a>
+                <a href="facility.html" class="hover:text-[goldenrod] transition-colors">Facility</a>
+                <a href="boarding.html" class="hover:text-[goldenrod] transition-colors">Boarding</a>
+                <a href="training.html" class="hover:text-[goldenrod] transition-colors">Training</a>
+                <a href="staff.html" class="text-[goldenrod]">Staff</a>
+                <a href="gallery.html" class="hover:text-[goldenrod] transition-colors">Gallery</a>
+                            <a href="reservation.html" class="inline-flex items-center justify-center bg-stone-900 text-white px-4 py-2 rounded-full hover:bg-[goldenrod] transition-all">Request Reservation</a>
             </div>
         </div>
     </nav>
@@ -85,12 +91,12 @@
     <!-- Header Section -->
     <header class="relative pt-8 pb-8 overflow-hidden bg-stone-900">
         <div class="max-w-7xl mx-auto px-6 text-center animate-reveal">
-            <span class="inline-block px-4 py-1.5 bg-red-100 text-red-700 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Expertise & Passion</span>
-            <h1 class="text-white text-4xl sm:text-5xl lg:text-7xl mb-6">Meet Our <br><span class="italic text-red-700">Incredible Staff.</span></h1>
+            <span class="inline-block px-4 py-1.5 bg-[#f9e8b5] text-[goldenrod] rounded-full text-xs font-bold uppercase tracking-widest mb-6">Expertise & Passion</span>
+            <h1 class="text-white text-4xl sm:text-5xl lg:text-7xl mb-6">Meet Our <br><span class="text-[goldenrod]">Incredible Staff.</span></h1>
             <p class="text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed">
                 Our staff make the exceptional experience we offer possible. Our trainers focus on building partnerships through thoughtful and effective instruction, while our care staff provides the attentive, day-to-day support that keeps every dog happy and comfortable. With decades of combined experience across training, care, and field work, our team supports every dog in every service we offer.
             </p>
-            <p class="mt-6 text-xs uppercase tracking-widest text-red-200 font-bold">70+ Years Combined Experience</p>
+            <p class="mt-6 text-xs uppercase tracking-widest text-[#f5e3b5] font-bold">70+ Years Combined Experience</p>
         </div>
     </header>
 
@@ -107,10 +113,10 @@
                     </div>
                     <div class="px-2">
                         <div class="flex items-center gap-3 mb-4">
-                            <span class="px-3 py-1 bg-red-700 text-white text-[10px] font-bold uppercase tracking-wider rounded-md">Head Trainer &#38; Owner Opperator</span>
+                            <span class="px-3 py-1 bg-[goldenrod] text-white text-[10px] font-bold uppercase tracking-wider rounded-md">Head Trainer &#38; Owner Opperator</span>
                             <span class="h-px flex-1 bg-stone-200"></span>
                         </div>
-                        <h3 class="serif text-3xl mb-4 group-hover:text-red-700 transition-colors">Brian Roushar</h3>
+                        <h3 class="serif text-3xl mb-4 group-hover:text-[goldenrod] transition-colors">Brian Roushar</h3>
                         <p class="text-stone-600 leading-relaxed mb-8 text-sm">
                             Brian Roushar has been training dogs since 1991, developing a lifelong passion for helping dogs thrive
 both at home and in the field. His approach blends practical experience with a deep understanding of
@@ -123,30 +129,30 @@ dogs.
                             <div class="flex flex-wrap gap-4">
                                 <div class="text-xs font-semibold text-stone-700">
                                     <div class="flex items-center gap-2">
-                                        <i data-lucide="clock" class="w-4 h-4 text-red-700"></i>
+                                        <i data-lucide="clock" class="w-4 h-4 text-[goldenrod]"></i>
                                         35+ Years of Professional Training Experience
                                     </div>
                                     <ul class="mt-2 ml-6 space-y-1 text-stone-600">
                                         <li class="flex items-start gap-2">
-                                            <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-red-700 mt-0.5"></i>
+                                            <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-[goldenrod] mt-0.5"></i>
                                             Family Dogs
                                         </li>
                                         <li class="flex items-start gap-2">
-                                            <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-red-700 mt-0.5"></i>
+                                            <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-[goldenrod] mt-0.5"></i>
                                             Hunting Dogs
                                         </li>
                                         <li class="flex items-start gap-2">
-                                            <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-red-700 mt-0.5"></i>
+                                            <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-[goldenrod] mt-0.5"></i>
                                             Tournament Hunting Dogs
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
-                                    <i data-lucide="check" class="w-4 h-4 text-red-700"></i>
+                                    <i data-lucide="check" class="w-4 h-4 text-[goldenrod]"></i>
                                     Proven Training Methodologies
                                 </div>
                                 <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
-                                    <i data-lucide="dog" class="w-4 h-4 text-red-700"></i>
+                                    <i data-lucide="dog" class="w-4 h-4 text-[goldenrod]"></i>
                                     Expertise in Both Family and Field-Ready Dogs
                                 </div>
                             </div>
@@ -165,7 +171,7 @@ dogs.
                             <span class="px-3 py-1 bg-stone-900 text-white text-[10px] font-bold uppercase tracking-wider rounded-md">Trainer</span>
                             <span class="h-px flex-1 bg-stone-200"></span>
                         </div>
-                        <h3 class="serif text-3xl mb-4 group-hover:text-red-700 transition-colors">Shawn Murray</h3>
+                        <h3 class="serif text-3xl mb-4 group-hover:text-[goldenrod] transition-colors">Shawn Murray</h3>
                         <p class="text-stone-600 leading-relaxed mb-8 text-sm">
                             Shawn Murray has been training since 2006, and specializes in obedience and the Intermediate programs.
                         </p>
@@ -173,11 +179,11 @@ dogs.
                             <h4 class="text-[10px] uppercase tracking-widest font-bold text-stone-400">Specialties</h4>
                             <div class="flex flex-wrap gap-4">
                                 <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
-                                    <i data-lucide="shield-check" class="w-4 h-4 text-red-700"></i>
+                                    <i data-lucide="shield-check" class="w-4 h-4 text-[goldenrod]"></i>
                                     Obedience
                                 </div>
                                 <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
-                                    <i data-lucide="activity" class="w-4 h-4 text-red-700"></i>
+                                    <i data-lucide="activity" class="w-4 h-4 text-[goldenrod]"></i>
                                     Intermediate
                                 </div>
                             </div>
@@ -196,7 +202,7 @@ dogs.
                             <span class="px-3 py-1 bg-stone-900 text-white text-[10px] font-bold uppercase tracking-wider rounded-md">Trainer</span>
                             <span class="h-px flex-1 bg-stone-200"></span>
                         </div>
-                        <h3 class="serif text-3xl mb-4 group-hover:text-red-700 transition-colors">Michael Uecker</h3>
+                        <h3 class="serif text-3xl mb-4 group-hover:text-[goldenrod] transition-colors">Michael Uecker</h3>
                         <p class="text-stone-600 leading-relaxed mb-8 text-sm">
                             Michael Uecker has been training since 2017, and specializes in Puppy, Obedience, Intermediate and Advanced programs.
                         </p>
@@ -204,15 +210,15 @@ dogs.
                             <h4 class="text-[10px] uppercase tracking-widest font-bold text-stone-400">Specialties</h4>
                             <div class="flex flex-wrap gap-4">
                                 <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
-                                    <i data-lucide="dog" class="w-4 h-4 text-red-700"></i>
+                                    <i data-lucide="dog" class="w-4 h-4 text-[goldenrod]"></i>
                                     Puppy
                                 </div>
                                 <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
-                                    <i data-lucide="activity" class="w-4 h-4 text-red-700"></i>
+                                    <i data-lucide="activity" class="w-4 h-4 text-[goldenrod]"></i>
                                     Intermediate and Advanced
                                 </div>
                                 <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
-                                    <i data-lucide="shield-check" class="w-4 h-4 text-red-700"></i>
+                                    <i data-lucide="shield-check" class="w-4 h-4 text-[goldenrod]"></i>
                                     Obedience
                                 </div>
                             </div>
@@ -231,7 +237,7 @@ dogs.
                             <span class="px-3 py-1 bg-stone-900 text-white text-[10px] font-bold uppercase tracking-wider rounded-md">Trainer</span>
                             <span class="h-px flex-1 bg-stone-200"></span>
                         </div>
-                        <h3 class="serif text-3xl mb-4 group-hover:text-red-700 transition-colors">Alainah Bowlds</h3>
+                        <h3 class="serif text-3xl mb-4 group-hover:text-[goldenrod] transition-colors">Alainah Bowlds</h3>
                         <p class="text-stone-600 leading-relaxed mb-8 text-sm">
                             Alainah Bowlds has been training since 2024, and specializes in obedience training.
                         </p>
@@ -239,7 +245,7 @@ dogs.
                             <h4 class="text-[10px] uppercase tracking-widest font-bold text-stone-400">Specialties</h4>
                             <div class="flex flex-wrap gap-4">
                                 <div class="flex items-center gap-2 text-xs font-semibold text-stone-700">
-                                    <i data-lucide="shield-check" class="w-4 h-4 text-red-700"></i>
+                                    <i data-lucide="shield-check" class="w-4 h-4 text-[goldenrod]"></i>
                                     Obedience
                                 </div>
                             </div>
@@ -250,7 +256,7 @@ dogs.
                 <!-- Staff Card 5 -->
                 <article class="staff-card group animate-reveal" style="animation-delay: 0.3s;">
                     <div class="relative aspect-[4/5] rounded-3xl overflow-hidden mb-8 shadow-xl bg-stone-100">
-                        <img src="imgs/place_holder.jpg" alt="Ashley" class="staff-image w-full h-full object-cover transition-transform duration-700 ease-out">
+                        <img src="imgs/Ashley.png" alt="Ashley" class="staff-image w-full h-full object-cover transition-transform duration-700 ease-out">
                         <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent opacity-60"></div>
                     </div>
                     <div class="px-2">
@@ -258,7 +264,7 @@ dogs.
                             <span class="px-3 py-1 bg-stone-900 text-white text-[10px] font-bold uppercase tracking-wider rounded-md">Kennel Manager</span>
                             <span class="h-px flex-1 bg-stone-200"></span>
                         </div>
-                        <h3 class="serif text-3xl mb-4 group-hover:text-red-700 transition-colors">Ashley</h3>
+                        <h3 class="serif text-3xl mb-4 group-hover:text-[goldenrod] transition-colors">Ashley</h3>
                         <p class="text-stone-600 leading-relaxed mb-8 text-sm">
                             	Ashley has been with us since 2017 and is a knowledgeable, welcoming point of contact for most client calls and visits.
                         </p>
@@ -283,38 +289,35 @@ dogs.
                 <div>
                     <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-stone-400">Quick Links</h4>
                     <ul class="space-y-3 text-stone-600 font-medium text-sm">
-                        <li><a href="index.html" class="hover:text-red-700 transition-colors">Home</a></li>
-                        <li><a href="facility.html" class="hover:text-red-700 transition-colors">The Facility</a></li>
-                        <li><a href="boarding.html" class="hover:text-red-700 transition-colors">Boarding</a></li>
-                        <li><a href="training.html" class="hover:text-red-700 transition-colors">Training</a></li>
-                        <li><a href="reservation.html" class="hover:text-red-700 transition-colors">Reservation</a></li>
-                        <li><a href="staff.html" class="text-red-700 transition-colors">Staff</a></li>
-                        <li><a href="gallery.html" class="hover:text-red-700 transition-colors">Gallery</a></li>
+                        <li><a href="index.html" class="hover:text-[goldenrod] transition-colors">Home</a></li>
+                        <li><a href="facility.html" class="hover:text-[goldenrod] transition-colors">The Facility</a></li>
+                        <li><a href="boarding.html" class="hover:text-[goldenrod] transition-colors">Boarding</a></li>
+                        <li><a href="training.html" class="hover:text-[goldenrod] transition-colors">Training</a></li>
+                        <li><a href="staff.html" class="text-[goldenrod]">Staff</a></li>
+                        <li><a href="gallery.html" class="hover:text-[goldenrod] transition-colors">Gallery</a></li>
+                        <li><a href="reservation.html" class="hover:text-[goldenrod] transition-colors">Reservation</a></li>
+                    
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-stone-400 flex items-center gap-2">
                         Office Hours
                     </h4>
-                    <p class="text-stone-700 font-semibold mb-3 text-sm">Monday - Friday, 8:00 AM - 5:00 PM</p>
-                    <p class="text-stone-600 text-sm leading-relaxed">
-                        Pickups by 11:00 AM on the day of pickup are not charged an additional day. Pickups after 11:00 AM
-                        are charged a full day of boarding. This policy also applies to additional days added to the end of
-                        training programs if a dog stays beyond the training program end date.
-                    </p>
+                    <p class="text-stone-700 font-semibold mb-3 text-sm">Monday - Saturday, 8:00 AM - 12:00 PM and 1:00 PM - 5:00 PM<br>Sunday, 2:00 PM - 4:00 PM</p>
+                    <p class="text-stone-600 text-sm leading-relaxed">Pickups by 11:00 AM on the day of departure are not charged an additional day. Pickups after 11:00 AM are charged a full day of boarding. This policy also applies to any days added beyond the original boarding reservation or the scheduled end date of a training program. Any extended stay will be billed at our standard daily boarding rate.</p>
                 </div>
 
                 <div id="contact">
                     <a href="https://www.google.com/maps?q=2819+Brush+Prairie+Rd,+Lester+Prairie,+MN+55354" target="_blank" rel="noopener noreferrer" aria-label="Open West Country Kennels address in Google Maps" class="block group">
-                        <h4 class="font-bold mb-2 text-sm uppercase tracking-widest text-stone-500 group-hover:text-red-700 transition-colors">Lester Prairie, MN</h4>
-                        <p class="text-stone-600 text-sm font-medium leading-relaxed group-hover:text-red-700 transition-colors">
+                        <h4 class="font-bold mb-2 text-sm uppercase tracking-widest text-stone-500 group-hover:text-[goldenrod] transition-colors">Lester Prairie, MN</h4>
+                        <p class="text-stone-600 text-sm font-medium leading-relaxed group-hover:text-[goldenrod] transition-colors">
                             2819 Brush Prairie Rd.<br>
                             Lester Prairie, MN 55354
                         </p>
                     </a>
                     <p class="text-stone-600 text-sm font-medium leading-relaxed mt-4">
                         <span class="text-stone-600 font-medium">Phone Number:</span><br>
-                        <span class="text-red-500 font-bold">(320) 544-0732</span>
+                        <span class="text-[goldenrod] font-bold">(320) 544-0732</span>
                     </p>
                     <a href="https://pawpartner.com/pz/book?p=3547719" target="_blank" rel="noopener noreferrer" class="inline-flex items-center mt-4 group" aria-label="Book boarding and kenneling with Paw Partner">
                         <img src="imgs/paw_partner.png" alt="Paw Partner booking" class="h-10 w-auto rounded-md shadow-sm ring-1 ring-stone-200 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:shadow-md">

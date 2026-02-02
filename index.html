@@ -35,6 +35,12 @@
             to { opacity: 1; transform: translateY(0); }
         }
         .animate-reveal { animation: reveal 0.8s ease-out forwards; }
+    
+        .shadow-accent {
+            --tw-shadow-color: rgba(184, 134, 11, 0.2);
+            --tw-shadow: var(--tw-shadow-colored);
+        }
+
     </style>
 </head>
 <body class="antialiased">
@@ -43,16 +49,16 @@
     <nav class="fixed top-0 w-full z-50 glass-nav relative">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-2 group">
-                <span class="font-bold text-xl tracking-tight uppercase">West Country <span class="text-red-700">Kennels</span></span>
+                <span class="font-bold text-xl tracking-tight uppercase">West Country <span class="text-[goldenrod]">Kennels</span></span>
             </a>
             <div class="hidden lg:flex items-center gap-8 font-medium text-sm uppercase tracking-wider text-stone-600">
-                <a href="index.html" class="text-red-700">Home</a>
-                <a href="facility.html" class="hover:text-red-700 transition-colors">Facility</a>
-                <a href="boarding.html" class="hover:text-red-700 transition-colors">Boarding</a>
-                <a href="training.html" class="hover:text-red-700 transition-colors">Training</a>
-                <a href="staff.html" class="hover:text-red-700 transition-colors">Staff</a>
-                <a href="gallery.html" class="hover:text-red-700 transition-colors">Gallery</a>
-                <a href="reservation.html" class="bg-stone-900 text-white px-5 py-2.5 rounded-full hover:bg-red-700 transition-all">Request Reservation</a>
+                <a href="index.html" class="text-[goldenrod]">Home</a>
+                <a href="facility.html" class="hover:text-[goldenrod] transition-colors">Facility</a>
+                <a href="boarding.html" class="hover:text-[goldenrod] transition-colors">Boarding</a>
+                <a href="training.html" class="hover:text-[goldenrod] transition-colors">Training</a>
+                <a href="staff.html" class="hover:text-[goldenrod] transition-colors">Staff</a>
+                <a href="gallery.html" class="hover:text-[goldenrod] transition-colors">Gallery</a>
+                <a href="reservation.html" class="bg-stone-900 text-white px-5 py-2.5 rounded-full hover:bg-[goldenrod] transition-all">Request Reservation</a>
             </div>
             <button class="lg:hidden text-stone-900" type="button" aria-expanded="false" aria-controls="mobile-menu" data-mobile-menu-button>
                 <i data-lucide="menu"></i>
@@ -60,13 +66,13 @@
         </div>
         <div id="mobile-menu" class="absolute left-0 right-0 top-full hidden lg:hidden border-t border-stone-200 bg-white/95 backdrop-blur shadow-lg" data-mobile-menu>
             <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 font-medium text-sm uppercase tracking-wider text-stone-600">
-                <a href="index.html" class="text-red-700">Home</a>
-                <a href="facility.html" class="hover:text-red-700 transition-colors">Facility</a>
-                <a href="boarding.html" class="hover:text-red-700 transition-colors">Boarding</a>
-                <a href="training.html" class="hover:text-red-700 transition-colors">Training</a>
-                <a href="staff.html" class="hover:text-red-700 transition-colors">Staff</a>
-                <a href="gallery.html" class="hover:text-red-700 transition-colors">Gallery</a>
-                <a href="reservation.html" class="inline-flex items-center justify-center bg-stone-900 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-all">Request Reservation</a>
+                <a href="index.html" class="text-[goldenrod]">Home</a>
+                <a href="facility.html" class="hover:text-[goldenrod] transition-colors">Facility</a>
+                <a href="boarding.html" class="hover:text-[goldenrod] transition-colors">Boarding</a>
+                <a href="training.html" class="hover:text-[goldenrod] transition-colors">Training</a>
+                <a href="staff.html" class="hover:text-[goldenrod] transition-colors">Staff</a>
+                <a href="gallery.html" class="hover:text-[goldenrod] transition-colors">Gallery</a>
+                <a href="reservation.html" class="inline-flex items-center justify-center bg-stone-900 text-white px-4 py-2 rounded-full hover:bg-[goldenrod] transition-all">Request Reservation</a>
             </div>
         </div>
     </nav>
@@ -81,7 +87,7 @@
     <!-- Hero Section -->
     <header class="relative pt-20 pb-1 overflow-hidden bg-stone-900">
         <div class="relative z-10 max-w-7xl mx-auto px-6 text-center text-white animate-reveal">
-            <h1 class="serif text-5xl lg:text-8xl mb-6">From Obedience <br> to Fieldwork <br><span class="italic text-red-700">to a Comfortable Stay</span></h1>
+            <h1 class="serif text-5xl lg:text-8xl mb-6">From Obedience <br> to Fieldwork <br><span class="text-[goldenrod]">to a Comfortable Stay</span></h1>
             <p class="text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed mb-10">
                 West Country Kennels uses proven training methods to prepare your dog for your
 lifestyle - whether that’s around the house, at the cabin, or out in the field. We also offer
@@ -89,7 +95,7 @@ reliable, comfortable boarding you can feel good about.
 Discover our bird dog training, obedience training for all breeds, and boarding services
 to find the right fit for your dog            </p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="training.html" class="px-8 py-4 bg-red-700 text-white rounded-full font-bold uppercase tracking-widest text-xs hover:bg-red-800 transition-all">View Programs</a>
+                <a href="training.html" class="px-8 py-4 bg-[goldenrod] text-white rounded-full font-bold uppercase tracking-widest text-xs hover:bg-[#b8860b] transition-all">View Programs</a>
                 <a href="facility.html" class="px-8 py-4 bg-white border border-stone-200 text-stone-900 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-stone-50 transition-all">Tour Facility</a>
             </div>
         </div>
@@ -101,7 +107,7 @@ to find the right fit for your dog            </p>
             <div class="grid grid-cols-2 md:grid-cols-2 text-center">
                 <div>
                     <div class="text-3xl font-bold mb-1">2000</div>
-                    <div class="text-[10px] uppercase tracking-widest text-stone-400 font-bold">Established</div>
+                    <div class="text-[10px] uppercase tracking-widest text-stone-400 font-bold">Year Established</div>
                 </div>
                 <div>
                     <div class="text-3xl font-bold mb-1">50+</div>
@@ -118,29 +124,29 @@ to find the right fit for your dog            </p>
                     <div class="aspect-[4/5] bg-stone-100 rounded-3xl overflow-hidden shadow-2xl">
                         <img src="imgs/Mazey.jpg" alt="Training facility" class="w-full h-full object-cover">
                     </div>
-                    <a href="https://www.google.com/maps?q=2819+Brush+Prairie+Rd,+Lester+Prairie,+MN+55354" target="_blank" rel="noopener noreferrer" aria-label="Open West Country Kennels address in Google Maps" class="absolute -bottom-6 -right-6 bg-red-700 p-6 sm:p-8 rounded-3xl text-white block hover:bg-red-800 transition-colors">
+                    <a href="https://www.google.com/maps?q=2819+Brush+Prairie+Rd,+Lester+Prairie,+MN+55354" target="_blank" rel="noopener noreferrer" aria-label="Open West Country Kennels address in Google Maps" class="absolute -bottom-6 -right-6 bg-[goldenrod] p-6 sm:p-8 rounded-3xl text-white block hover:bg-[#b8860b] transition-colors">
                         <i data-lucide="map-pin" class="w-8 h-8 mb-4"></i>
                         <h4 class="font-bold text-xl mb-1">Lester Prairie, MN</h4>
                         <p class="text-sm opacity-80">Premier Training Grounds</p>
                     </a>
                 </div>
                 <div>
-                    <h2 class="serif text-4xl lg:text-5xl mb-8">The Ultimate Play <br><span class="italic">and</span>  Stay Environment.</h2>
+                    <h2 class="serif text-4xl lg:text-5xl mb-8">The Ultimate Play <br><span class="">and</span>  Stay Environment.</h2>
                     <p class="text-stone-600 leading-relaxed mb-8">
                         Our facility spans 50+ peaceful acres designed to support every aspect of your dog’s
 comfort, care, and training.
                     </p>
                     <ul class="space-y-4 mb-10">
                         <li class="flex items-center gap-3 font-medium">
-                            <i data-lucide="check-circle-2" class="text-red-700 w-5 h-5"></i>
+                            <i data-lucide="check-circle-2" class="text-[goldenrod] w-5 h-5"></i>
                             Climate Controlled Indoor Kennels
                         </li>
                         <li class="flex items-center gap-3 font-medium">
-                            <i data-lucide="check-circle-2" class="text-red-700 w-5 h-5"></i>
+                            <i data-lucide="check-circle-2" class="text-[goldenrod] w-5 h-5"></i>
                             Experienced Trainers &amp; Caregivers
                         </li>
                     </ul>
-                    <a href="facility.html" class="inline-flex items-center gap-2 font-bold text-sm uppercase tracking-widest text-red-700 hover:gap-4 transition-all">
+                    <a href="facility.html" class="inline-flex items-center gap-2 font-bold text-sm uppercase tracking-widest text-[goldenrod] hover:gap-4 transition-all">
                         Learn More About Our Facility <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
                 </div>
@@ -162,38 +168,35 @@ comfort, care, and training.
                 <div>
                     <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-stone-400">Quick Links</h4>
                     <ul class="space-y-3 text-stone-600 font-medium text-sm">
-                        <li><a href="index.html" class="hover:text-red-700 transition-colors">Home</a></li>
-                        <li><a href="facility.html" class="hover:text-red-700 transition-colors">The Facility</a></li>
-                        <li><a href="boarding.html" class="hover:text-red-700 transition-colors">Boarding</a></li>                    
-                        <li><a href="training.html" class="hover:text-red-700 transition-colors">Training</a></li>
-                        <li><a href="reservation.html" class="hover:text-red-700 transition-colors">Reservation</a></li>
-                        <li><a href="staff.html" class="hover:text-red-700 transition-colors">Staff</a></li>
-                        <li><a href="gallery.html" class="hover:text-red-700 transition-colors">Gallery</a></li>
+                        <li><a href="index.html" class="text-[goldenrod]">Home</a></li>
+                        <li><a href="facility.html" class="hover:text-[goldenrod] transition-colors">The Facility</a></li>
+                        <li><a href="boarding.html" class="hover:text-[goldenrod] transition-colors">Boarding</a></li>
+                        <li><a href="training.html" class="hover:text-[goldenrod] transition-colors">Training</a></li>
+                        <li><a href="staff.html" class="hover:text-[goldenrod] transition-colors">Staff</a></li>
+                        <li><a href="gallery.html" class="hover:text-[goldenrod] transition-colors">Gallery</a></li>
+                        <li><a href="reservation.html" class="hover:text-[goldenrod] transition-colors">Reservation</a></li>
+                    
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-stone-400 flex items-center gap-2">
                         Office Hours
                     </h4>
-                    <p class="text-stone-700 font-semibold mb-3 text-sm">Monday - Friday, 8:00 AM - 5:00 PM</p>
-                    <p class="text-stone-600 text-sm leading-relaxed">
-                        Pickups by 11:00 AM on the day of pickup are not charged an additional day. Pickups after 11:00 AM
-                        are charged a full day of boarding. This policy also applies to additional days added to the end of
-                        training programs if a dog stays beyond the training program end date.
-                    </p>
+                    <p class="text-stone-700 font-semibold mb-3 text-sm">Monday - Saturday, 8:00 AM - 12:00 PM and 1:00 PM - 5:00 PM<br>Sunday, 2:00 PM - 4:00 PM</p>
+                    <p class="text-stone-600 text-sm leading-relaxed">Pickups by 11:00 AM on the day of departure are not charged an additional day. Pickups after 11:00 AM are charged a full day of boarding. This policy also applies to any days added beyond the original boarding reservation or the scheduled end date of a training program. Any extended stay will be billed at our standard daily boarding rate.</p>
                 </div>
 
                 <div id="contact">
                     <a href="https://www.google.com/maps?q=2819+Brush+Prairie+Rd,+Lester+Prairie,+MN+55354" target="_blank" rel="noopener noreferrer" aria-label="Open West Country Kennels address in Google Maps" class="block group">
-                        <h4 class="font-bold mb-2 text-sm uppercase tracking-widest text-stone-500 group-hover:text-red-700 transition-colors">Lester Prairie, MN</h4>
-                        <p class="text-stone-600 text-sm font-medium leading-relaxed group-hover:text-red-700 transition-colors">
+                        <h4 class="font-bold mb-2 text-sm uppercase tracking-widest text-stone-500 group-hover:text-[goldenrod] transition-colors">Lester Prairie, MN</h4>
+                        <p class="text-stone-600 text-sm font-medium leading-relaxed group-hover:text-[goldenrod] transition-colors">
                             2819 Brush Prairie Rd.<br>
                             Lester Prairie, MN 55354
                         </p>
                     </a>
                     <p class="text-stone-600 text-sm font-medium leading-relaxed mt-4">
                         <span class="text-stone-600 font-medium">Phone Number:</span><br>
-                        <span class="text-red-500 font-bold">(320) 544-0732</span>
+                        <span class="text-[goldenrod] font-bold">(320) 544-0732</span>
                     </p>
                     <a href="https://pawpartner.com/pz/book?p=3547719" target="_blank" rel="noopener noreferrer" class="inline-flex items-center mt-4 group" aria-label="Book boarding and kenneling with Paw Partner">
                         <img src="imgs/paw_partner.png" alt="Paw Partner booking" class="h-10 w-auto rounded-md shadow-sm ring-1 ring-stone-200 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:shadow-md">

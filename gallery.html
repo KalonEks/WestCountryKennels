@@ -35,6 +35,12 @@
             to { opacity: 1; transform: translateY(0); }
         }
         .animate-reveal { animation: reveal 0.8s ease-out forwards; }
+    
+        .shadow-accent {
+            --tw-shadow-color: rgba(184, 134, 11, 0.2);
+            --tw-shadow: var(--tw-shadow-colored);
+        }
+
     </style>
 </head>
 <body class="antialiased">
@@ -43,16 +49,16 @@
     <nav class="fixed top-0 w-full z-50 glass-nav relative">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-2 group">
-                <span class="font-bold text-xl tracking-tight uppercase">West Country <span class="text-red-700">Kennels</span></span>
+                <span class="font-bold text-xl tracking-tight uppercase">West Country <span class="text-[goldenrod]">Kennels</span></span>
             </a>
             <div class="hidden lg:flex items-center gap-8 font-medium text-sm uppercase tracking-wider text-stone-600">
-                <a href="index.html" class="hover:text-red-700 transition-colors">Home</a>
-                <a href="facility.html" class="hover:text-red-700 transition-colors">Facility</a>
-                <a href="boarding.html" class="hover:text-red-700 transition-colors">Boarding</a>
-                <a href="training.html" class="hover:text-red-700 transition-colors">Training</a>
-                <a href="staff.html" class="hover:text-red-700 transition-colors">Staff</a>
-                <a href="gallery.html" class="text-red-700 border-b-2 border-red-700 pb-1">Gallery</a>
-                            <a href="reservation.html" class="bg-stone-900 text-white px-5 py-2.5 rounded-full hover:bg-red-700 transition-all">Request Reservation</a>
+                <a href="index.html" class="hover:text-[goldenrod] transition-colors">Home</a>
+                <a href="facility.html" class="hover:text-[goldenrod] transition-colors">Facility</a>
+                <a href="boarding.html" class="hover:text-[goldenrod] transition-colors">Boarding</a>
+                <a href="training.html" class="hover:text-[goldenrod] transition-colors">Training</a>
+                <a href="staff.html" class="hover:text-[goldenrod] transition-colors">Staff</a>
+                <a href="gallery.html" class="text-[goldenrod] border-b-2 border-[goldenrod] pb-1">Gallery</a>
+                            <a href="reservation.html" class="bg-stone-900 text-white px-5 py-2.5 rounded-full hover:bg-[goldenrod] transition-all">Request Reservation</a>
             </div>
             <button class="lg:hidden text-stone-900" type="button" aria-expanded="false" aria-controls="mobile-menu" data-mobile-menu-button>
                 <i data-lucide="menu"></i>
@@ -60,13 +66,13 @@
         </div>
         <div id="mobile-menu" class="absolute left-0 right-0 top-full hidden lg:hidden border-t border-stone-200 bg-white/95 backdrop-blur shadow-lg" data-mobile-menu>
             <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 font-medium text-sm uppercase tracking-wider text-stone-600">
-                <a href="index.html" class="hover:text-red-700 transition-colors">Home</a>
-                <a href="facility.html" class="hover:text-red-700 transition-colors">Facility</a>
-                <a href="boarding.html" class="hover:text-red-700 transition-colors">Boarding</a>
-                <a href="training.html" class="hover:text-red-700 transition-colors">Training</a>
-                <a href="staff.html" class="hover:text-red-700 transition-colors">Staff</a>
-                <a href="gallery.html" class="text-red-700">Gallery</a>
-                <a href="reservation.html" class="inline-flex items-center justify-center bg-stone-900 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-all">Request Reservation</a>
+                <a href="index.html" class="hover:text-[goldenrod] transition-colors">Home</a>
+                <a href="facility.html" class="hover:text-[goldenrod] transition-colors">Facility</a>
+                <a href="boarding.html" class="hover:text-[goldenrod] transition-colors">Boarding</a>
+                <a href="training.html" class="hover:text-[goldenrod] transition-colors">Training</a>
+                <a href="staff.html" class="hover:text-[goldenrod] transition-colors">Staff</a>
+                <a href="gallery.html" class="text-[goldenrod]">Gallery</a>
+                <a href="reservation.html" class="inline-flex items-center justify-center bg-stone-900 text-white px-4 py-2 rounded-full hover:bg-[goldenrod] transition-all">Request Reservation</a>
             </div>
         </div>
     </nav>
@@ -93,25 +99,37 @@
                     <img src="imgs/Mazey.jpg" alt="Labrador retriever at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
                 <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
-                    <img src="imgs/Trainer_photo_Brian_Roushar_2.jpg" alt="Training photo at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <img src="imgs/training_puppy.png" alt="Training photo at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
                 <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
-                    <img src="imgs/Trainer_Photo_Shawn_Murray1.png" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <img src="imgs/training_intermediate.png" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
                 <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
-                    <img src="imgs/Trainer_Photo_Michael_Uecker.JPEG" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <img src="imgs/training_advanced.png" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
                 <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
-                    <img src="imgs/Trainer_Photo_Alainah_Bowles.JPEG" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <img src="imgs/training_obedience.png" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
                 <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
-                    <img src="imgs/Trainer_Photo_Brian_Roushar.jpg" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <img src="imgs/training_waterfowl.png" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
                 <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
-                    <img src="imgs/Trainer_Photo_Shawn_Murray.JPEG" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <img src="imgs/training_private_lessons.png" alt="Trainer portrait at West Country Kennels" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
                 <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
-                    <img src="imgs/gallery_1.jpg" alt="West Country Kennels staff placeholder" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <img src="imgs/facility_3.jpg" alt="West Country Kennels staff placeholder" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
+                    <img src="imgs/facility_img.png" alt="West Country Kennels staff placeholder" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
+                    <img src="imgs/board_train.png" alt="West Country Kennels staff placeholder" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
+                    <img src="imgs/boarding.png" alt="West Country Kennels staff placeholder" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="group rounded-3xl overflow-hidden bg-stone-100 shadow-lg aspect-[4/5]">
+                    <img src="imgs/Kelly_Brian.png" alt="West Country Kennels staff placeholder" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 </div>
             </div>
         </div>
@@ -130,38 +148,35 @@
                 <div>
                     <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-stone-400">Quick Links</h4>
                     <ul class="space-y-3 text-stone-600 font-medium text-sm">
-                        <li><a href="index.html" class="hover:text-red-700 transition-colors">Home</a></li>
-                        <li><a href="facility.html" class="hover:text-red-700 transition-colors">The Facility</a></li>
-                        <li><a href="boarding.html" class="hover:text-red-700 transition-colors">Boarding</a></li>
-                        <li><a href="training.html" class="hover:text-red-700 transition-colors">Training</a></li>
-                        <li><a href="reservation.html" class="hover:text-red-700 transition-colors">Reservation</a></li>
-                        <li><a href="staff.html" class="hover:text-red-700 transition-colors">Staff</a></li>
-                        <li><a href="gallery.html" class="text-red-700">Gallery</a></li>
+                        <li><a href="index.html" class="hover:text-[goldenrod] transition-colors">Home</a></li>
+                        <li><a href="facility.html" class="hover:text-[goldenrod] transition-colors">The Facility</a></li>
+                        <li><a href="boarding.html" class="hover:text-[goldenrod] transition-colors">Boarding</a></li>
+                        <li><a href="training.html" class="hover:text-[goldenrod] transition-colors">Training</a></li>
+                        <li><a href="staff.html" class="hover:text-[goldenrod] transition-colors">Staff</a></li>
+                        <li><a href="gallery.html" class="text-[goldenrod]">Gallery</a></li>
+                        <li><a href="reservation.html" class="hover:text-[goldenrod] transition-colors">Reservation</a></li>
+                    
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-stone-400 flex items-center gap-2">
                         Office Hours
                     </h4>
-                    <p class="text-stone-700 font-semibold mb-3 text-sm">Monday - Friday, 8:00 AM - 5:00 PM</p>
-                    <p class="text-stone-600 text-sm leading-relaxed">
-                        Pickups by 11:00 AM on the day of pickup are not charged an additional day. Pickups after 11:00 AM
-                        are charged a full day of boarding. This policy also applies to additional days added to the end of
-                        training programs if a dog stays beyond the training program end date.
-                    </p>
+                    <p class="text-stone-700 font-semibold mb-3 text-sm">Monday - Saturday, 8:00 AM - 12:00 PM and 1:00 PM - 5:00 PM<br>Sunday, 2:00 PM - 4:00 PM</p>
+                    <p class="text-stone-600 text-sm leading-relaxed">Pickups by 11:00 AM on the day of departure are not charged an additional day. Pickups after 11:00 AM are charged a full day of boarding. This policy also applies to any days added beyond the original boarding reservation or the scheduled end date of a training program. Any extended stay will be billed at our standard daily boarding rate.</p>
                 </div>
 
                 <div id="contact">
                     <a href="https://www.google.com/maps?q=2819+Brush+Prairie+Rd,+Lester+Prairie,+MN+55354" target="_blank" rel="noopener noreferrer" aria-label="Open West Country Kennels address in Google Maps" class="block group">
-                        <h4 class="font-bold mb-2 text-sm uppercase tracking-widest text-stone-500 group-hover:text-red-700 transition-colors">Lester Prairie, MN</h4>
-                        <p class="text-stone-600 text-sm font-medium leading-relaxed group-hover:text-red-700 transition-colors">
+                        <h4 class="font-bold mb-2 text-sm uppercase tracking-widest text-stone-500 group-hover:text-[goldenrod] transition-colors">Lester Prairie, MN</h4>
+                        <p class="text-stone-600 text-sm font-medium leading-relaxed group-hover:text-[goldenrod] transition-colors">
                             2819 Brush Prairie Rd.<br>
                             Lester Prairie, MN 55354
                         </p>
                     </a>
                     <p class="text-stone-600 text-sm font-medium leading-relaxed mt-4">
                         <span class="text-stone-600 font-medium">Phone Number:</span><br>
-                        <span class="text-red-500 font-bold">(320) 544-0732</span>
+                        <span class="text-[goldenrod] font-bold">(320) 544-0732</span>
                     </p>
                     <a href="https://pawpartner.com/pz/book?p=3547719" target="_blank" rel="noopener noreferrer" class="inline-flex items-center mt-4 group" aria-label="Book boarding and kenneling with Paw Partner">
                         <img src="imgs/paw_partner.png" alt="Paw Partner booking" class="h-10 w-auto rounded-md shadow-sm ring-1 ring-stone-200 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:shadow-md">
