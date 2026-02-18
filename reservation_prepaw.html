@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Request boarding and training reservations with West Country Kennels.">
+    <title>Reservation | West Country Kennels</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fafaf9;
+            color: #1c1917;
+        }
+
+        .serif { font-family: 'Playfair Display', serif; }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .hero-pattern {
+            background-color: #f5f5f4;
+            background-image: radial-gradient(#e5e7eb 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+
+        @keyframes reveal {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-reveal { animation: reveal 0.8s ease-out forwards; }
+    
+        .shadow-accent {
+            --tw-shadow-color: rgba(184, 134, 11, 0.2);
+            --tw-shadow: var(--tw-shadow-colored);
+        }
+
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav relative">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <span class="font-bold text-xl tracking-tight uppercase">West Country <span class="text-[goldenrod]">Kennels</span></span>
+            </a>
+            <div class="hidden lg:flex items-center gap-8 font-medium text-sm uppercase tracking-wider text-stone-600">
+                <a href="index.html" class="hover:text-[goldenrod] transition-colors">Home</a>
+                <a href="facility.html" class="hover:text-[goldenrod] transition-colors">Facility</a>
+                <a href="boarding.html" class="hover:text-[goldenrod] transition-colors">Boarding</a>
+                <a href="training.html" class="hover:text-[goldenrod] transition-colors">Training</a>
+                <a href="staff.html" class="hover:text-[goldenrod] transition-colors">Staff</a>
+                <a href="gallery.html" class="hover:text-[goldenrod] transition-colors">Gallery</a>
+                            <a href="reservation_prepaw.html" class="bg-stone-900 text-white px-5 py-2.5 rounded-full hover:bg-[goldenrod] transition-all">Request Reservation</a>
+            </div>
+            <button class="lg:hidden text-stone-900" type="button" aria-expanded="false" aria-controls="mobile-menu" data-mobile-menu-button>
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="absolute left-0 right-0 top-full hidden lg:hidden border-t border-stone-200 bg-white/95 backdrop-blur shadow-lg" data-mobile-menu>
+            <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4 font-medium text-sm uppercase tracking-wider text-stone-600">
+                <a href="index.html" class="hover:text-[goldenrod] transition-colors">Home</a>
+                <a href="facility.html" class="hover:text-[goldenrod] transition-colors">Facility</a>
+                <a href="boarding.html" class="hover:text-[goldenrod] transition-colors">Boarding</a>
+                <a href="training.html" class="hover:text-[goldenrod] transition-colors">Training</a>
+                <a href="staff.html" class="hover:text-[goldenrod] transition-colors">Staff</a>
+                <a href="gallery.html" class="hover:text-[goldenrod] transition-colors">Gallery</a>
+                            <a href="reservation_prepaw.html" class="inline-flex items-center justify-center bg-stone-900 text-white px-4 py-2 rounded-full hover:bg-[goldenrod] transition-all">Request Reservation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Logo Banner -->
+    <section class="bg-white">
+        <div class="w-full px-0">
+            <img src="imgs/Logo2.png" alt="West Country Kennels logo" class="w-full h-auto block object-contain mx-auto">
+        </div>
+    </section>
+
+    <!-- Header Section -->
+    <header class="relative pt-8 pb-8 overflow-hidden bg-stone-900">
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center text-white animate-reveal">
+            <span class="inline-block px-4 py-1.5 bg-[#f9e8b5] text-[goldenrod] rounded-full text-xs font-bold uppercase tracking-widest mb-6">Reservations</span>
+            <h1 class="serif text-white text-4xl sm:text-5xl lg:text-7xl mb-6">Book Your Stay <br><span class="text-[goldenrod]">With West Country Kennels.</span></h1>
+            <p class="text-lg text-stone-200 max-w-2xl mx-auto leading-relaxed">
+                For boarding reservations, contact us directly so our team can help schedule the right stay and answer any questions before arrival.
+            </p>
+            <p class="text-lg text-stone-200 max-w-2xl mx-auto leading-relaxed">Training reservations must be scheduled by phone so we can recommend the right program for your dog. This conversation ensures the goals for your dog are matched with the proper training program. Our team will also walk you through what to expect during the training process.</p>
+        </div>
+    </header>
+
+    <!-- Contact Highlight -->
+    <section class="py-8 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="rounded-3xl border border-stone-200 bg-stone-50 p-10 text-center">
+                <h2 class="serif text-3xl mb-6">Contact and Booking Links</h2>
+                <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <a href="tel:+13205440732" class="bg-white border border-stone-200 rounded-2xl p-6 block text-center hover:border-[#f5e3b5] hover:shadow-md transition-all" aria-label="Call West Country Kennels">
+                        <div class="flex items-center justify-center mb-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-[goldenrod]"></i>
+                        </div>
+                        <p class="text-xs uppercase tracking-widest text-stone-500 font-bold mb-2">Phone</p>
+                        <p class="text-lg font-bold text-stone-900">(320) 544-0732</p>
+                    </a>
+                    <a href="https://www.google.com/maps?q=2819+Brush+Prairie+Rd,+Lester+Prairie,+MN+55354" target="_blank" rel="noopener noreferrer" class="bg-white border border-stone-200 rounded-2xl p-6 block text-center hover:border-[#f5e3b5] hover:shadow-md transition-all" aria-label="Open West Country Kennels address in Google Maps">
+                        <div class="flex items-center justify-center mb-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-[goldenrod]"></i>
+                        </div>
+                        <p class="text-xs uppercase tracking-widest text-stone-500 font-bold mb-2">Location</p>
+                        <p class="text-lg font-bold text-stone-900">2819 Brush Prairie Rd, Lester Prairie, MN 55354</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Register -->
+    <section class="py-4 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="inline-block px-4 py-1.5 bg-[#f9e8b5] text-[goldenrod] rounded-full text-xs font-bold uppercase tracking-widest mb-4">How to Reserve</span>
+                <h2 class="serif text-3xl lg:text-5xl mb-4">Follow These Simple Steps</h2>
+                <p class="text-stone-700 max-w-2xl mx-auto">Call our team to request boarding or training and we will guide you through the full process.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-stone-50 border border-stone-200 rounded-3xl p-7">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm font-bold uppercase tracking-widest text-stone-600">Step 1</span>
+                        <span class="w-8 h-8 rounded-full bg-[goldenrod] text-white text-sm font-bold flex items-center justify-center">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Call West Country Kennels</h3>
+                    <p class="text-base text-stone-700 leading-relaxed">Call us at (320) 544-0732 to start your reservation request.</p>
+                </div>
+                <div class="bg-stone-50 border border-stone-200 rounded-3xl p-7">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm font-bold uppercase tracking-widest text-stone-600">Step 2</span>
+                        <span class="w-8 h-8 rounded-full bg-[goldenrod] text-white text-sm font-bold flex items-center justify-center">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Discuss Your Dog and Dates</h3>
+                    <p class="text-base text-stone-700 leading-relaxed">Tell us about your dog, preferred dates, and the type of stay you need.</p>
+                </div>
+                <div class="bg-stone-50 border border-stone-200 rounded-3xl p-7">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm font-bold uppercase tracking-widest text-stone-600">Step 3</span>
+                        <span class="w-8 h-8 rounded-full bg-[goldenrod] text-white text-sm font-bold flex items-center justify-center">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Choose a Service</h3>
+                    <p class="text-base text-stone-700 leading-relaxed">We will help you choose boarding, board and train, or a training program.</p>
+                </div>
+                <div class="bg-stone-50 border border-stone-200 rounded-3xl p-7">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm font-bold uppercase tracking-widest text-stone-600">Step 4</span>
+                        <span class="w-8 h-8 rounded-full bg-[goldenrod] text-white text-sm font-bold flex items-center justify-center">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Submit Reservation Details</h3>
+                    <p class="text-base text-stone-700 leading-relaxed">Share owner contact details, emergency contact info, and any care instructions.</p>
+                </div>
+                <div class="bg-stone-50 border border-stone-200 rounded-3xl p-7">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm font-bold uppercase tracking-widest text-stone-600">Step 5</span>
+                        <span class="w-8 h-8 rounded-full bg-[goldenrod] text-white text-sm font-bold flex items-center justify-center">5</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Provide Vaccination Records</h3>
+                    <p class="text-base text-stone-700 leading-relaxed">Send current Rabies, DHP-P, and Bordetella records before your arrival date.</p>
+                </div>
+                <div class="bg-stone-50 border border-stone-200 rounded-3xl p-7">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm font-bold uppercase tracking-widest text-stone-600">Step 6</span>
+                        <span class="w-8 h-8 rounded-full bg-[goldenrod] text-white text-sm font-bold flex items-center justify-center">6</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Review Deposits and Policies</h3>
+                    <p class="text-base text-stone-700 leading-relaxed">We will confirm any required deposits, cancellation windows, and check-in details.</p>
+                </div>
+                <div class="bg-stone-50 border border-stone-200 rounded-3xl p-7">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm font-bold uppercase tracking-widest text-stone-600">Step 7</span>
+                        <span class="w-8 h-8 rounded-full bg-[goldenrod] text-white text-sm font-bold flex items-center justify-center">7</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Prepare for Drop-Off</h3>
+                    <p class="text-base text-stone-700 leading-relaxed">Bring food instructions, medications, and any requested paperwork on arrival day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-50 pt-12 pb-10 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-4 mb-16 items-start">
+                <!-- Logo -->
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <img src="imgs/Logo.png" alt="West Country Kennels logo" class="w-50 h-40 object-contain">
+                    </div>
+                    <p class="text-stone-500 max-w-sm mb-6 font-bold">Trusted Training and Care since 2000</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-stone-400">Quick Links</h4>
+                    <ul class="space-y-3 text-stone-600 font-medium text-sm">
+                        <li><a href="index.html" class="hover:text-[goldenrod] transition-colors">Home</a></li>
+                        <li><a href="facility.html" class="hover:text-[goldenrod] transition-colors">The Facility</a></li>
+                        <li><a href="boarding.html" class="hover:text-[goldenrod] transition-colors">Boarding</a></li>
+                        <li><a href="training.html" class="hover:text-[goldenrod] transition-colors">Training</a></li>
+                        <li><a href="staff.html" class="hover:text-[goldenrod] transition-colors">Staff</a></li>
+                        <li><a href="gallery.html" class="hover:text-[goldenrod] transition-colors">Gallery</a></li>
+                        <li><a href="reservation_prepaw.html" class="text-[goldenrod]">Reservation</a></li>
+                    
+                    </ul>
+                </div>
+                <!-- Office Hours -->
+                <div>
+                    <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-stone-400 flex items-center gap-2">
+                        Office Hours
+                    </h4>
+                    <p class="text-stone-700 font-semibold mb-3 text-sm">Monday - Saturday, 8:00 AM - 12:00 PM and 1:00 PM - 5:00 PM<br>Sunday, 2:00 PM - 4:00 PM</p>
+                    <p class="text-stone-600 text-sm leading-relaxed">Pickups by 11:00 AM on the day of departure are not charged an additional day. Pickups after 11:00 AM are charged a full day of boarding. This policy also applies to any days added beyond the original boarding reservation or the scheduled end date of a training program. Any extended stay will be billed at our standard daily boarding rate.</p>
+                </div>
+                <!-- Contact -->
+                <div id="contact">
+                    <a href="https://www.google.com/maps?q=2819+Brush+Prairie+Rd,+Lester+Prairie,+MN+55354" target="_blank" rel="noopener noreferrer" aria-label="Open West Country Kennels address in Google Maps" class="block group">
+                        <h4 class="font-bold mb-2 text-sm uppercase tracking-widest text-stone-500 group-hover:text-[goldenrod] transition-colors">Lester Prairie, MN</h4>
+                        <p class="text-stone-600 text-sm font-medium leading-relaxed group-hover:text-[goldenrod] transition-colors">
+                            2819 Brush Prairie Rd.<br>
+                            Lester Prairie, MN 55354
+                        </p>
+                    </a>
+                    <p class="text-stone-600 text-sm font-medium leading-relaxed mt-4">
+                        <span class="text-stone-600 font-medium">Phone Number:</span><br>
+                        <span class="text-[goldenrod] font-bold">(320) 544-0732</span>
+                    </p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-stone-200 text-center text-[11px] text-stone-400 uppercase tracking-widest font-bold">
+                <p>&copy; 2026 West Country Kennels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.querySelector('[data-mobile-menu-button]');
+        const menu = document.querySelector('[data-mobile-menu]');
+
+        if (menuButton && menu) {
+            menuButton.addEventListener('click', () => {
+                const isHidden = menu.classList.toggle('hidden');
+                menuButton.setAttribute('aria-expanded', String(!isHidden));
+            });
+
+            menu.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    if (!menu.classList.contains('hidden')) {
+                        menu.classList.add('hidden');
+                        menuButton.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+        }
+
+        lucide.createIcons();
+    </script>
+</body>
+</html>
